@@ -1,6 +1,6 @@
 package:
     name: basemap
-    version: 1.0.8.dev
+    version: 1.0.8.dev0
 
 source:
   git_url: https://github.com/matplotlib/basemap.git
@@ -9,7 +9,7 @@ source:
       - basemap-1.0.8dev-datadir.patch
 
 build:
-    number: 0
+    number: 1
 
 requirements:
     build:
