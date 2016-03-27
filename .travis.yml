@@ -1,4 +1,3 @@
-
 # This file was generated automatically from conda-smithy. To update this configuration,
 # update the conda-forge.yaml and/or the recipe/meta.yaml.
 
@@ -7,12 +6,15 @@ language: objective-c
 env:
   matrix:
     
-    - CONDA_NPY=110  CONDA_PY=27  
-    - CONDA_NPY=19  CONDA_PY=27  
-    - CONDA_NPY=110  CONDA_PY=34  
-    - CONDA_NPY=19  CONDA_PY=34  
-    - CONDA_NPY=110  CONDA_PY=35  
-    - CONDA_NPY=19  CONDA_PY=35  
+    - CONDA_NPY=110  CONDA_PY=27
+    - CONDA_NPY=19  CONDA_PY=27
+    - CONDA_NPY=110  CONDA_PY=34
+    - CONDA_NPY=19  CONDA_PY=34
+    - CONDA_NPY=110  CONDA_PY=35
+    - CONDA_NPY=19  CONDA_PY=35
+  global:
+    # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
+    - secure: "cw52iGuKEqsBI764uLDgJcl7fFWrqfcW8/9YZzE+vH8U0XifIA6qdWkTmxVUUQQq/BbVFuovDcj2LpG/jjNP4R6c4Kj0YJzaK4cXwReIHWjffFngVy9xlR8FYjn3demg1ragDEO1Pdlowg8NpQRL7fmDnpfk1hSKS4EkTbZQrRh0WOZIMNci9ZzvLe8GnCHxgmmezoY4pURhseQ/tQ0h1YCITKPYC1JTM6vqM9T3MportPg/jlg5IfM8Ec7fIav1+ln9N+C1UH7HKh2xAFiV5r7gaKXnpQadCZ5lQpZuqRnD40WaKvSX3ruHKIPsI/9EfjxuC+g4M+l7mr5AAIUYy2Mv2zqiEwpr8vTsh6zQintTjBfC2Hm6WIsU+Rr8O1+ci64b17egveVuT+Vl2EvsnOnaigm0NNGYsbmuyHImefMq4f0ipf6mlhyGQNbw8kpeMo9ku9neHJEtEy5jEfaFA+CUwr9ye3Eaq6xVyuW0S1gaft7fcrotuOcPQ90Z5VMylB6xku8/9BoKzjPxrU8+GIDQj7TotwyD6s17/Z1xUm4RBNFgb0u29gRXxwDqDDLjF2yQsZz0/APIUA0nwgMJ7XcSD1R72sYA52JL5QeXMzuOnov/2w22cjDPDwVwnZ5Wqg8hkou60FKGENrsFFgcRkopSkmZbMUOUZVHHLEEoD0="
 
 
 install:
@@ -26,8 +28,6 @@ install:
 
       conda update --yes conda
       conda install --yes conda-build jinja2 anaconda-client
-
-      
       conda config --add channels conda-forge
       
 
