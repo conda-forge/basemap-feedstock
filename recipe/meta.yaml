@@ -31,9 +31,9 @@ requirements:
 test:
   imports:
     - mpl_toolkits.basemap
-  commands:
-    - conda inspect linkages -p $PREFIX basemap  # [not win]
-    - conda inspect objects -p $PREFIX basemap  # [osx]
+  #commands:
+    #- conda inspect linkages -p $PREFIX basemap  # [not win]
+    #- conda inspect objects -p $PREFIX basemap  # [osx]
 
 about:
   home: http://matplotlib.org/basemap
