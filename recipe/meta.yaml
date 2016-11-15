@@ -1,5 +1,5 @@
 {% set version = "1.0.8.dev0" %}
-{% set commit = "ddf92f134f26aafd96228f43793586be1e52fd4d" %}
+{% set commit = "b80bfdc34da508c247bb2124b6cc5f025c4f1b46" %}
 
 package:
   name: basemap
@@ -8,22 +8,22 @@ package:
 source:
   fn: {{ commit }}.tar.gz
   url: https://github.com/matplotlib/basemap/archive/{{ commit }}.tar.gz
-  sha256: eed745099ba889e5e2c462316c8b58352e6edcc3df16a353b28a36e8ba6637e4
+  sha256: fe697260e981135d1fe86f3560ff581ed5239239697b9b17d14890c3b897156e
   patches:
     - basemap-1.0.8dev-datadir.patch
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
     - python
     - numpy x.x
-    - geos 3.4.*
+    - geos 3.5.*
   run:
     - python
     - numpy x.x
-    - geos 3.4.*
+    - geos 3.5.*
     - matplotlib
     - pyproj
     - pyshp
@@ -32,7 +32,8 @@ test:
   imports:
     - mpl_toolkits.basemap
   #commands:
-    #- conda inspect linkages -p ${PREFIX} basemap  # [not win]
+    #- conda inspect linkages -p $PREFIX basemap  # [not win]
+    #- conda inspect objects -p $PREFIX basemap  # [osx]
 
 about:
   home: http://matplotlib.org/basemap
