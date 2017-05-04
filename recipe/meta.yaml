@@ -1,19 +1,17 @@
-{% set version = "1.0.8.dev0" %}
-{% set commit = "b80bfdc34da508c247bb2124b6cc5f025c4f1b46" %}
+{% set version = "1.1.0" %}
 
 package:
   name: basemap
   version: {{ version }}
 
 source:
-  fn: {{ commit }}.tar.gz
-  url: https://github.com/matplotlib/basemap/archive/{{ commit }}.tar.gz
-  sha256: fe697260e981135d1fe86f3560ff581ed5239239697b9b17d14890c3b897156e
+  url: https://github.com/matplotlib/basemap/archive/v{{ version }}.tar.gz
+  sha256: 6acdc3a08bfcebf0a1b52a05d73d51b7aa5e7240fedfa95537c92d16f2ef8778
   patches:
     - basemap-1.0.8dev-datadir.patch
 
 build:
-  number: 3
+  number: 0
 
 requirements:
   build:
@@ -38,6 +36,7 @@ test:
 about:
   home: http://matplotlib.org/basemap
   license: MIT
+  license_file: README.md
   summary: 'Plot on map projections using matplotlib.'
 
 extra:
