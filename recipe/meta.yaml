@@ -11,17 +11,17 @@ source:
     - basemap-1.0.8dev-datadir.patch
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
     - python
     - numpy x.x
-    - geos 3.5.*
+    - geos 3.5.1
   run:
     - python
     - numpy x.x
-    - geos 3.5.*
+    - geos 3.5.1
     - matplotlib
     - pyproj
     - pyshp
