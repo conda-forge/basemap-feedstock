@@ -9,22 +9,19 @@ source:
   sha256: 6acdc3a08bfcebf0a1b52a05d73d51b7aa5e7240fedfa95537c92d16f2ef8778
   patches:
     - basemap-1.0.8dev-datadir.patch
+    - backport_386.patch
 
 build:
-  number: 3
+  number: 4
 
 requirements:
   build:
     - python
-    - numpy 1.7.*  # [py27]
-    - numpy 1.9.*  # [py35]
-    - numpy 1.11.*  # [py36]
+    - numpy 1.11.*
     - geos 3.6.2
   run:
     - python
-    - numpy >=1.7  # [py27]
-    - numpy >=1.9  # [py35]
-    - numpy >=1.11  # [py36]
+    - numpy >=1.11
     - geos 3.6.2
     - matplotlib
     - pyproj
@@ -34,8 +31,8 @@ test:
   imports:
     - mpl_toolkits.basemap
   commands:
-    - conda inspect linkages -p $PREFIX basemap  # [not win]
-    - conda inspect objects -p $PREFIX basemap  # [osx]
+    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
+    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
 
 about:
   home: http://matplotlib.org/basemap
