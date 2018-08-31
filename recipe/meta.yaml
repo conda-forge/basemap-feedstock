@@ -20,7 +20,8 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - python
-    - numpy
+    - numpy  # [not win]
+    - numpy 1.14  # [win]
     - geos
     - cython
   run:
