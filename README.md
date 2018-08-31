@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Plot on map projections using matplotlib.
+Summary: Plot on map projections using matplotlib
 
 
 

@@ -1,11 +1,15 @@
 c_compiler:
-- vs2008
+- vs2015
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
 cxx_compiler:
-- vs2008
+- vs2015
 geos:
 - 3.6.2
 numpy:
-- '1.11'
+- '1.14'
 pin_run_as_build:
   geos:
     max_pin: x.x.x
@@ -13,7 +17,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- '2.7'
+- '3.7'
 zip_keys:
 - - python
   - c_compiler

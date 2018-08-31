@@ -10,9 +10,11 @@ source:
   patches:
     - basemap-1.0.8dev-datadir.patch
     - backport_386.patch
+    - use_proj_data.patch
 
 build:
-  number: 5
+  number: 6
+  skip: True  # [win and py2k]
 
 requirements:
   build:
@@ -22,6 +24,7 @@ requirements:
     - python
     - numpy
     - geos
+    - cython
   run:
     - python
     - {{ pin_compatible('numpy') }}
@@ -33,15 +36,12 @@ requirements:
 test:
   imports:
     - mpl_toolkits.basemap
-  commands:
-    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
-    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
 
 about:
   home: http://matplotlib.org/basemap
   license: MIT
   license_file: README.md
-  summary: 'Plot on map projections using matplotlib.'
+  summary: 'Plot on map projections using matplotlib'
 
 extra:
   recipe-maintainers:
