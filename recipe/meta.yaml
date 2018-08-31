@@ -10,6 +10,7 @@ source:
   patches:
     - basemap-1.0.8dev-datadir.patch
     - backport_386.patch
+    - use_proj_data.patch
 
 build:
   number: 6
