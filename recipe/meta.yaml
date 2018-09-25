@@ -11,6 +11,7 @@ source:
     - basemap-1.0.8dev-datadir.patch
     - backport_386.patch
     - use_proj_data.patch
+    # Back port of https://github.com/matplotlib/basemap/pull/398
     - remove_is_scalar.patch
 
 build:
