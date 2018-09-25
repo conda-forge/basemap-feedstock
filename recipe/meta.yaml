@@ -11,9 +11,10 @@ source:
     - basemap-1.0.8dev-datadir.patch
     - backport_386.patch
     - use_proj_data.patch
+    - remove_is_scalar.patch
 
 build:
-  number: 6
+  number: 7
   skip: True  # [win and py2k]
 
 requirements:
