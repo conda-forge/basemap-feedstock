@@ -1,11 +1,11 @@
-{% set version = "1.2.0rel" %}
+{% set version = "1.2.0" %}
 
 package:
   name: basemap
   version: {{ version }}
 
 source:
-  url: https://github.com/matplotlib/basemap/archive/v{{ version }}.tar.gz
+  url: https://github.com/matplotlib/basemap/archive/v{{ version }}rel.tar.gz
   sha256: bd5bf305918a2eb675939873b735238f9e3dfe6b5c290e37c41e5b082ff3639a
   patches:
     - basemap-1.0.8dev-datadir.patch
