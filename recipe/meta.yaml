@@ -1,21 +1,19 @@
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: basemap
   version: {{ version }}
 
 source:
-  url: https://github.com/matplotlib/basemap/archive/v{{ version }}.tar.gz
-  sha256: 6acdc3a08bfcebf0a1b52a05d73d51b7aa5e7240fedfa95537c92d16f2ef8778
+  url: https://github.com/matplotlib/basemap/archive/v{{ version }}rel.tar.gz
+  sha256: bd5bf305918a2eb675939873b735238f9e3dfe6b5c290e37c41e5b082ff3639a
   patches:
     - basemap-1.0.8dev-datadir.patch
     - backport_386.patch
     - use_proj_data.patch
-    # Back port of https://github.com/matplotlib/basemap/pull/398
-    - remove_is_scalar.patch
 
 build:
-  number: 7
+  number: 0
   skip: True  # [win and py2k]
 
 requirements:
