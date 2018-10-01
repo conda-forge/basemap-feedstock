@@ -7,7 +7,7 @@ cythonize --force src/_geoslib.pyx
 
 export GEOS_DIR=$PREFIX
 
-$PYTHON setup.py install
+$PYTHON -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 # Remove the data from the site-packages directory.
 rm -rf $SP_DIR/mpl_toolkits/basemap/data
