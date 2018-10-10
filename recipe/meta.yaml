@@ -46,6 +46,11 @@ about:
   license: MIT
   license_file: README.md
   summary: 'Plot on map projections using matplotlib'
+  description: |
+    Basemap toolkit is a library for plotting 2D data on maps in Python.
+    It is similar in functionality to the matlab mapping toolbox, the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
+  doc_url: http://matplotlib.org/basemap/
+  doc_source_url: https://github.com/matplotlib/basemap/blob/master/doc/index.rst
 
 extra:
   recipe-maintainers:
