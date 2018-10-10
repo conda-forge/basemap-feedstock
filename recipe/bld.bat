@@ -4,7 +4,9 @@ rmdir %SRC_DIR%\geos-3.3.3 /s /q || exit 1
 del src/_geoslib.c
 cythonize --force src/_geoslib.pyx
 
-"%PYTHON%" -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+:: Installing via pip has some issues, use setuptools
+:: "%PYTHON%" -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+%PYTHON% setup.py install --single-version-externally-managed --record=record.txt
 if errorlevel 1 exit 1
 
 :: Remove the data from the site-packages directory.
