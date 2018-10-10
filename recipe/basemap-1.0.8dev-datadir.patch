@@ -26,7 +26,7 @@
 +        If you are requesting an, 'intermediate', 'high' or 'full'
 +        resolution dataset, you may need to download and install those
 +        files separately with
-+        `conda install -c conda-forge basemap-data-hires`.""")
++        `conda install basemap-data-hires`.""")
          # only gshhs coastlines can be polygons.
          if name != 'gshhs': as_polygons=False
          try:
@@ -38,7 +38,7 @@
          gis_file = os.path.join(basemap_datadir,'UScounties')
 +        if not os.path.isfile(gis_file + '.shp'):
 +            msg = ('Cannot find {}.shp\nYou can install it with'
-+                   '`conda install -c conda-forge basemap-data-hires`').format
++                   '`conda install basemap-data-hires`').format
 +            raise IOError(msg(gis_file))
 +        ax = ax or self._check_ax()
          county_info = self.readshapefile(gis_file,'counties',\
