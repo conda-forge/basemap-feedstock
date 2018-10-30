@@ -8,8 +8,6 @@ cxx_compiler:
 - vs2015
 geos:
 - 3.6.2
-numpy:
-- '1.14'
 pin_run_as_build:
   geos:
     max_pin: x.x.x
