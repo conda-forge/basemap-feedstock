@@ -1,15 +1,19 @@
+build_number_decrement:
+- '1000'
 c_compiler:
-- vs2015
+- toolchain_c
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2015
+- toolchain_cxx
+docker_image:
+- condaforge/linux-anvil
 geos:
 - 3.6.2
 numpy:
-- '1.14'
+- '1.9'
 pin_run_as_build:
   geos:
     max_pin: x.x.x
@@ -17,8 +21,11 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- '3.5'
+- '3.7'
 zip_keys:
-- - python
-  - c_compiler
+- - c_compiler
   - cxx_compiler
+  - channel_sources
+  - channel_targets
+  - docker_image
+  - build_number_decrement
