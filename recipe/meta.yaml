@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: basemap
@@ -6,13 +6,12 @@ package:
 
 source:
   url: https://github.com/matplotlib/basemap/archive/v{{ version }}rel.tar.gz
-  sha256: bd5bf305918a2eb675939873b735238f9e3dfe6b5c290e37c41e5b082ff3639a
+  sha256: 3fb30424f18cd4ffd505e30fd9c810ae81b999bb92f950c76553e1abc081faa7
   patches:
-    - basemap-1.0.8dev-datadir.patch
-    - use_proj_data.patch
+    - data.patch
 
 build:
-  number: 4
+  number: 0
   skip: True  # [win and py2k]
 
 requirements:
@@ -25,17 +24,19 @@ requirements:
     - cython
     - numpy
     - geos
-    - matplotlib-base >=1.0.0
-    - pyproj >=1.9.3,<2
+    - matplotlib-base >=1.0.0,!=3.0.1
+    - pyproj >=1.9.3
+    - proj4 >=4.9.3,<6
     - pyshp >=1.2.0
     - six
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - geos
-    - matplotlib-base >=1.0.0
-    - pyproj >=1.9.3,<2
+    - matplotlib-base >=1.0.0,!=3.0.1
+    - pyproj >=1.9.3
     - pyshp >=1.2.0
+    - proj4 >=4.9.3,<6
     - six
 
 test:
