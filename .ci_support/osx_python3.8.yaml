@@ -13,7 +13,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '9'
 geos:
-- 3.7.2
+- 3.8.0
 macos_machine:
 - x86_64-apple-darwin13.4.0
 macos_min_version:
