@@ -13,7 +13,7 @@ cxx_compiler_version:
 docker_image:
 - condaforge/linux-anvil-comp7
 geos:
-- 3.7.2
+- 3.8.0
 numpy:
 - '1.14'
 pin_run_as_build:
