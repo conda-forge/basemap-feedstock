@@ -11,7 +11,7 @@ source:
     - data.patch
 
 build:
-  number: 2
+  number: 3
   skip: True  # [win and py2k]
 
 requirements:
@@ -26,7 +26,7 @@ requirements:
     - geos
     - matplotlib-base >=1.0.0,!=3.0.1
     - pyproj >=1.9.3
-    - proj4 >=4.9.3,<6
+    - proj4 >=4.9.3
     - pyshp >=1.2.0
     - six
   run:
@@ -36,7 +36,7 @@ requirements:
     - matplotlib-base >=1.0.0,!=3.0.1
     - pyproj >=1.9.3
     - pyshp >=1.2.0
-    - proj4 >=4.9.3,<6
+    - proj4 >=4.9.3
     - six
 
 test:
