@@ -6,7 +6,6 @@ package:
   version: {{ version }}
 
 source:
-  # url: https://github.com/matplotlib/basemap/archive/v{{ version }}rel.tar.gz
   url: https://github.com/matplotlib/basemap/archive/{{ commit }}.tar.gz
   sha256: 55b79c5ce09f153339c3a079eed2f739a0f2d6e5f933862b26fc70d026a8a4c1
   patches:
@@ -27,11 +26,8 @@ requirements:
     - cython
     - numpy
     - geos
-    # - matplotlib-base >=1.0.0,!=3.0.1
     - pyproj
     - proj
-    # - pyshp >=1.2.0
-    # - six
   run:
     - python
     - {{ pin_compatible('numpy') }}
