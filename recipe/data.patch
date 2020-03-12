@@ -25,7 +25,7 @@
  # create dictionary that maps epsg codes to Basemap kwargs.
 -epsgf = open(os.path.join(basemap_datadir, 'epsg'))
 +pyproj_datadir = os.environ['PROJ_LIB']
-+epsgf = open(os.path.join(pyproj_datadir,'epsg'))
++epsgf = open(os.path.join(basemap_datadir,'epsg'))
  epsg_dict={}
  for line in epsgf:
      if line.startswith("#"):
