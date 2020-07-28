@@ -5,7 +5,7 @@ Home: http://matplotlib.org/basemap
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Plot on map projections using matplotlib
 
