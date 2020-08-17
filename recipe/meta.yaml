@@ -1,18 +1,17 @@
-{% set commit = "bcad813b56e5c4cc9295760ac6683b46aecfd534" %}
-{% set version = "1.3.0" %}
+{% set version = "1.2.2" %}
 
 package:
   name: basemap
   version: {{ version }}
 
 source:
-  url: https://github.com/matplotlib/basemap/archive/{{ commit }}.tar.gz
+  url: https://github.com/matplotlib/basemap/archive/v{{ version }}rel.tar.gz
   sha256: 55b79c5ce09f153339c3a079eed2f739a0f2d6e5f933862b26fc70d026a8a4c1
   patches:
     - data.patch
 
 build:
-  number: 3
+  number: 0
   skip: True  # [win and py2k]
 
 requirements:
@@ -31,8 +30,8 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - geos
-    - matplotlib-base >=1.0.0,<3
-    - pyproj
+    - matplotlib-base >=1.0.0,!=3.0.1
+    - pyproj >=1.9.3
     - pyshp >=1.2.0
     - proj
     - six
