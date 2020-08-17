@@ -28,3 +28,5 @@ proj:
 - 7.1.0
 python:
 - 3.7.* *_cpython
+target_platform:
+- osx-64
