@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/matplotlib/basemap/archive/v{{ version }}rel.tar.gz
-  sha256: 55b79c5ce09f153339c3a079eed2f739a0f2d6e5f933862b26fc70d026a8a4c1
+  sha256: 7e6ee5d03b10168862cff82bfa819df8264c04f078eac4549a22dd2631696613
   patches:
     - data.patch
 
