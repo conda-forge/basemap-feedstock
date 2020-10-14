@@ -1,17 +1,11 @@
 c_compiler:
-- gcc
-c_compiler_version:
-- '7'
+- vs2017
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- gxx
-cxx_compiler_version:
-- '7'
-docker_image:
-- condaforge/linux-anvil-comp7
+- vs2017
 geos:
 - 3.8.1
 numpy:
@@ -25,4 +19,7 @@ proj:
 python:
 - 3.6.* *_cpython
 target_platform:
-- linux-64
+- win-64
+zip_keys:
+- - python
+  - numpy
