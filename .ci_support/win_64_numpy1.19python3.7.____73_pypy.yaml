@@ -15,7 +15,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 proj:
-- 8.0.1
+- 8.2.0
 python:
 - 3.7.* *_73_pypy
 target_platform:
