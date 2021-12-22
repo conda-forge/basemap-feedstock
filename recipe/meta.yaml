@@ -26,20 +26,22 @@ requirements:
     - patch  # [not win]
   host:
     - python
-    - pip
     - cython
-    - numpy
     - geos
-    - pyproj
+    - numpy
+    - pip
     - proj
+    - pyproj
+    - setuptools
+    - wheel
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - geos
     - matplotlib-base >=1.0.0,!=3.0.1
+    - proj
     - pyproj >=1.9.3
     - pyshp >=1.2.0
-    - proj
     - six
 
 test:
