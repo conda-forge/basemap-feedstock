@@ -11,43 +11,58 @@ source:
     - data.patch
 
 build:
-  number: 1
+  number: 2
+  # This package isn't included to the SOW Packages list
+  skip: True  # [linux and s390x]
   skip: True  # [win and py2k]
+  ignore_run_exports:
+    - proj
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - m2-patch  # [win]
+    - patch  # [not win]
   host:
     - python
-    - pip
     - cython
-    - numpy
     - geos
-    - pyproj
+    - numpy
+    - pip
     - proj
+    - pyproj
+    - setuptools
+    - wheel
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - geos
     - matplotlib-base >=1.0.0,!=3.0.1
+    - proj
     - pyproj >=1.9.3
     - pyshp >=1.2.0
-    - proj
     - six
 
 test:
   imports:
     - mpl_toolkits.basemap
+  requires:
+    - pip
+  commands:
+    - pip check
+    - python -c "from mpl_toolkits.basemap import Basemap"
 
 about:
   home: http://matplotlib.org/basemap
   license: MIT
+  license_family: MIT
   license_file: README.md
   summary: 'Plot on map projections using matplotlib'
   description: |
     Basemap toolkit is a library for plotting 2D data on maps in Python.
     It is similar in functionality to the matlab mapping toolbox, the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
+  dev_url: https://github.com/matplotlib/basemap
   doc_url: http://matplotlib.org/basemap/
   doc_source_url: https://github.com/matplotlib/basemap/blob/master/doc/index.rst
 
