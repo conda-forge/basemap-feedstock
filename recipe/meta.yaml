@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  #skip: True  # [linux and s390x]
+  skip: True  # [win32]  Missing dependencies in win32 arch and not expecting they will be updated.
   skip: True  # [py<3.8]  Dependencies require 3.8+
 
 requirements:
