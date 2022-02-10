@@ -15,8 +15,6 @@ build:
   number: 0
   #skip: True  # [linux and s390x]
   skip: True  # [py<3.8]  Dependencies require 3.8+
-  ignore_run_exports:
-    - proj
 
 requirements:
   build:
@@ -41,7 +39,6 @@ outputs:
         - numpy >=1.19
         - geos
         - pyproj
-        - proj
         - setuptools
         - wheel
       run:
@@ -52,7 +49,6 @@ outputs:
         - matplotlib-base >=1.0.0,!=3.0.1
         - pyproj >=1.9.3
         - pyshp >=1.2.0
-        - proj
         - six >=1.10,<1.16
     test:
       imports:
