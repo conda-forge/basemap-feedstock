@@ -38,8 +38,8 @@ outputs:
         - python
         - pip
         - cython >=0.29,<3.1
-        - numpy >=1.21  # [not linux-ppc64le]
-        - numpy >=1.19  # [linux-ppc64le]
+        - numpy >=1.21  # [not ppc64le]
+        - numpy >=1.19  # [ppc64le]
         - geos
         - pyproj
         - setuptools
