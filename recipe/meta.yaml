@@ -17,7 +17,6 @@ build:
   skip: True  # [s390x]  Missing dependencies.
   skip: True  # [win32]  Missing dependencies in win32 arch and not expecting they will be updated.
   skip: True  # [py<38]  Dependencies require 3.8+
-  skip: True  # [not (linux and x86_64)]  Dependencies require 3.8+
 
 requirements:
   build:
