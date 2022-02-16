@@ -1,4 +1,4 @@
-{% set version = "1.3.1" %}
+{% set version = "1.3.2" %}
 {% set build_number = "0" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/matplotlib/basemap/archive/v{{ version }}.tar.gz
-  sha256: 8f4ed7d5736711ba2b413e5fe038d4349d35eb3f28cba836094b6cca5f0a634f
+  sha256: c35aa397be4de342a3078ec089094531609712abd78e3d11b92d792974fd8141
   patches:
     # Update messages regarding installation of `basemap-data-hires`.
     - install_hires_instructions.patch
