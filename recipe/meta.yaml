@@ -11,6 +11,7 @@ source:
   patches:
     # Update messages regarding installation of `basemap-data-hires`.
     - install_hires_instructions.patch
+    - /install_numpy_override.patch    # This is a horible hack. Remove it ASAP.
 
 build:
   number: {{ build_number }}
