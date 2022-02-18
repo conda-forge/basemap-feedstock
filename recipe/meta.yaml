@@ -15,9 +15,6 @@ source:
 
 build:
   number: {{ build_number }}
-  skip: True  # [s390x]  Missing dependencies.
-  skip: True  # [win32]  Missing dependencies in win32 arch and not expecting they will be updated.
-  skip: True  # [py<38]  Dependencies require 3.8+
 
 requirements:
   build:
@@ -31,6 +28,9 @@ outputs:
     script: build-basemap.sh  # [not win]  This script will delete `pyproject.toml`. Remove ASAP.
     script: bld-basemap.bat   # [win]
     build:
+      skip: True  # [s390x]  Missing dependencies.
+      skip: True  # [win32]  Missing dependencies in win32 arch and not expecting they will be updated.
+      skip: True  # [py<38]  Dependencies require 3.8+
     requirements:
       build:
         - {{ compiler('c') }}
@@ -82,6 +82,9 @@ outputs:
     script: bld-basemap.bat   # [win]
     build:
       noarch: python
+      skip: True  # [s390x]  Missing dependencies.
+      skip: True  # [win32]  Missing dependencies in win32 arch and not expecting they will be updated.
+      skip: True  # [py<38]  Dependencies require 3.8+
     requirements:
       host:
         - python
@@ -105,6 +108,9 @@ outputs:
     script: bld-basemap.bat   # [win]
     build:
       noarch: python
+      skip: True  # [s390x]  Missing dependencies.
+      skip: True  # [win32]  Missing dependencies in win32 arch and not expecting they will be updated.
+      skip: True  # [py<38]  Dependencies require 3.8+
     requirements:
       host:
         - python
