@@ -11,8 +11,8 @@ source:
     - data.patch
 
 build:
-  number: 4
-  skip: True  # [win and py2k]
+  number: 5
+  skip: True  # [py<38]
 
 requirements:
   build:
@@ -50,3 +50,4 @@ extra:
   recipe-maintainers:
     - molinav
     - ocefpaf
+    - ReimarBauer
