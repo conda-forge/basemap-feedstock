@@ -2,9 +2,6 @@ ECHO "==========================================================================
 ECHO "Building %PKG_NAME%"
 ECHO ""
 
-:: Ensure our geos will be used.
-set GEOS_DIR=%LIBRARY_PREFIX%
-
 :: Jump to the correct build section
 if "%PKG_NAME%"=="basemap" GOTO CASE_basemap
 if "%PKG_NAME%"=="basemap-data" GOTO CASE_basemap_data
