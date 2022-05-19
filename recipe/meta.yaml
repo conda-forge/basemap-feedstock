@@ -20,9 +20,6 @@ build:
 
 requirements:
   build:
-    - cython
-    - python
-    - pip
     - m2-patch  # [win]
     - patch     # [not win]
 
@@ -32,12 +29,9 @@ outputs:
     script: build-basemap.sh  # [not win]  This script will delete `pyproject.toml`. Remove ASAP.
     script: bld-basemap.bat   # [win]
     build:
-      script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
       skip: True  # [py<38]  Dependencies require 3.8+
     requirements:
       build:
-        - python
-        - pip
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
       host:
@@ -128,8 +122,6 @@ outputs:
       dev_url: https://github.com/matplotlib/basemap
       doc_url: https://matplotlib.org/basemap/
       doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ version }}/packages/basemap/doc/index.rst
-
-
 
 about:
   home: https://matplotlib.org/basemap
