@@ -3,7 +3,7 @@ set GEOS_DIR=%LIBRARY_PREFIX%
 rmdir %SRC_DIR%\geos-3.3.3 /s /q || exit 1
 cythonize --force src/_geoslib.pyx
 
-"%PYTHON%" -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+python -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 if errorlevel 1 exit 1
 
 :: Remove the data from the site-packages directory.
