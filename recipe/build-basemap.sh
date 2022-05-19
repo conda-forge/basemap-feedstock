@@ -3,8 +3,8 @@
 echo "===================================================================================================="
 echo "Building $PKG_NAME"
 echo ""
-
-export GEOS_DIR=$PREFIX
+# checking if we can remove this
+# export GEOS_DIR=$PREFIX
 
 case $PKG_NAME in
 
