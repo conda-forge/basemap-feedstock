@@ -21,6 +21,8 @@ build:
 requirements:
   build:
     - cython
+    - python
+    - pip
     - m2-patch  # [win]
     - patch     # [not win]
 
@@ -33,6 +35,8 @@ outputs:
       skip: True  # [py<38]  Dependencies require 3.8+
     requirements:
       build:
+        - python
+        - pip
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
       host:
