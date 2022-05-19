@@ -20,6 +20,7 @@ build:
 
 requirements:
   build:
+    - cython
     - m2-patch  # [win]
     - patch     # [not win]
 
