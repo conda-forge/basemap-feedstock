@@ -32,6 +32,7 @@ outputs:
     script: build-basemap.sh  # [not win]  This script will delete `pyproject.toml`. Remove ASAP.
     script: bld-basemap.bat   # [win]
     build:
+      script: {{ PYTHON }} -m pip install . -vv
       skip: True  # [py<38]  Dependencies require 3.8+
     requirements:
       build:
@@ -140,3 +141,4 @@ extra:
   recipe-maintainers:
     - molinav
     - ocefpaf
+    - ReimarBauer
