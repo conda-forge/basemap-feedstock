@@ -125,6 +125,12 @@ outputs:
 
 
 
+about:
+  home: https://matplotlib.org/basemap
+  license: LGPL-3.0-or-later
+  license_family: LGPL
+  summary: split for basemap.
+
 extra:
   recipe-maintainers:
     - molinav
