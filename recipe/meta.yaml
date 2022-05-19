@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/matplotlib/basemap/archive/v{{ version }}.tar.gz
-  sha256: c0f3eb1e2e7b10332505c83cd86a902ba110835a45fd0622886de4089436cd59
+  sha256: 3ef24bd4d56f702e98b9b44fd3d770d5cb8938f4dde269b69254da8fdfaca105
   patches:
     # Update messages regarding installation of `basemap-data-hires`.
     - install_hires_instructions.patch
