@@ -15,17 +15,17 @@ EXIT 1
 
 
 :CASE_basemap
-  "%PYTHON%" -m pip install packages\basemap --no-deps --ignore-installed  -vvv
+  python -m pip install packages\basemap --no-deps --ignore-installed  -vvv
   IF errorlevel 1 EXIT 1
   GOTO CASE_end
 
 :CASE_basemap_data
-  "%PYTHON%" -m pip install packages\basemap_data --no-deps --ignore-installed  -vvv
+  python -m pip install packages\basemap_data --no-deps --ignore-installed  -vvv
   IF errorlevel 1 EXIT 1
   GOTO CASE_end
 
 :CASE_basemap_data_hires
-  "%PYTHON%" -m pip install packages\basemap_data_hires --no-deps --ignore-installed  -vvv
+  python -m pip install packages\basemap_data_hires --no-deps --ignore-installed  -vvv
   IF errorlevel 1 EXIT 1
   GOTO CASE_end
 
