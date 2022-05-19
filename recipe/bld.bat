@@ -1,7 +1,6 @@
 :: Ensure our geos will be used.
 set GEOS_DIR=%LIBRARY_PREFIX%
 rmdir %SRC_DIR%\geos-3.3.3 /s /q || exit 1
-del src/_geoslib.c
 cythonize --force src/_geoslib.pyx
 
 "%PYTHON%" -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
