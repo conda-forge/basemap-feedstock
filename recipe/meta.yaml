@@ -33,7 +33,7 @@ outputs:
     script: bld-basemap.bat   # [win]
     build:
       script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-      skip: True  # [py<40]  Dependencies require 3.8+
+      skip: True  # [py<38]  Dependencies require 3.8+
     requirements:
       build:
         - python
