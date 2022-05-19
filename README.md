@@ -162,7 +162,7 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `basemap, basemap-data and basemap-data-hires` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `basemap, basemap-data, basemap-data-hires` can be installed with `conda`:
 
 ```
 conda install basemap basemap-data basemap-data-hires
@@ -266,6 +266,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@ReimarBauer](https://github.com/ReimarBauer/)
 * [@molinav](https://github.com/molinav/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
