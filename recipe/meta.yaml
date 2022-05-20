@@ -129,7 +129,7 @@ about:
   license_family: MIT
   summary: split for basemap.
   license_file:
-        - packages/basemap/LICENSE
+    - packages/basemap/LICENSE
 
 extra:
   recipe-maintainers:
