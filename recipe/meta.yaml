@@ -29,9 +29,10 @@ outputs:
     script: build-basemap.sh  # [not win]  This script will delete `pyproject.toml`. Remove ASAP.
     script: bld-basemap.bat   # [win]
     build:
-      skip: True  # [python_impl == 'pypy'] 
+      skip: True  # [python_impl == 'pypy']
     requirements:
       build:
+        - python
         - cython >=0.29,<3.1
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
@@ -83,12 +84,11 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python
         - pip
         - setuptools
         - wheel
       run:
-        - python >=3.6
+        - python
     about:
       home: https://matplotlib.org/basemap
       license: LGPL-3.0-or-later
@@ -106,12 +106,11 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python
         - pip
         - setuptools
         - wheel
       run:
-        - python >=3.6
+        - python
         - {{ pin_compatible('basemap-data') }}
     about:
       home: https://matplotlib.org/basemap
