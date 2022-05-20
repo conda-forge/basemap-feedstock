@@ -47,7 +47,7 @@ outputs:
         - wheel
       run:
         - python
-        - {{ pin_compatible('basemap-data') }}
+        - {{ pin_subpackage('basemap-data') }}
         - {{ pin_compatible('numpy') }}
         - {{ pin_compatible('geos') }}
         - matplotlib-base >=1.5,!=3.0.1
@@ -59,7 +59,7 @@ outputs:
         - mpl_toolkits.basemap
       requires:
         - pip
-        - {{ pin_compatible('basemap-data') }}
+        - {{ pin_subpackage('basemap-data') }}
       commands:
         - pip check
         - python -c "from mpl_toolkits.basemap import Basemap"
@@ -111,7 +111,7 @@ outputs:
         - wheel
       run:
         - python
-        - {{ pin_compatible('basemap-data') }}
+        - {{ pin_subpackage('basemap-data') }}
     about:
       home: https://matplotlib.org/basemap
       license: LGPL-3.0-or-later
