@@ -100,7 +100,7 @@ outputs:
       doc_url: https://matplotlib.org/basemap/
       doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ version }}/packages/basemap/doc/index.rst
 
-  - name: basemap-data-hires
+  - name: tmp-basemap-data-hires
     script: build-basemap.sh  # [not win]
     script: bld-basemap.bat   # [win]
     build:
