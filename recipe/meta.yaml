@@ -17,7 +17,7 @@ build:
   number: {{ build_number }}
   skip: True  # [s390x]  Missing dependencies.
   skip: True  # [win32]  Missing dependencies in win32 arch and not expecting they will be updated.
-  skip: True  # [pypy]
+  skip: True  # [python_impl == 'pypy']
 
 requirements:
   build:
