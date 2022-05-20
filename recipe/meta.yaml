@@ -39,7 +39,7 @@ outputs:
         - python
         - pip
         - cython >=0.29,<3.1
-        - numpy
+        - numpy >=1.21
         - geos
         - pyproj
         - setuptools
