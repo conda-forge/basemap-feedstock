@@ -45,8 +45,8 @@ outputs:
         - setuptools
         - wheel
       run:
-        - {{ pin_subpackage('basemap-data') }}
         - python
+        - {{ pin_subpackage('basemap-data') }}
         - {{ pin_compatible('numpy') }}
         - {{ pin_compatible('geos') }}
         - matplotlib-base >=1.5,!=3.0.1
@@ -80,7 +80,7 @@ outputs:
     script: build-basemap.sh  # [not win]
     script: bld-basemap.bat   # [win]
     build:
-      noarch: python
+      noarch: generic
     requirements:
       host:
         - python
@@ -103,7 +103,7 @@ outputs:
     script: build-basemap.sh  # [not win]
     script: bld-basemap.bat   # [win]
     build:
-      noarch: python
+      noarch: generic
     requirements:
       host:
         - python
@@ -111,8 +111,8 @@ outputs:
         - setuptools
         - wheel
       run:
-        - {{ pin_subpackage('basemap-data') }}
         - python >=3.6
+        - {{ pin_subpackage('basemap-data') }}
     about:
       home: https://matplotlib.org/basemap
       license: LGPL-3.0-or-later
