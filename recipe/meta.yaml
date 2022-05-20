@@ -17,6 +17,7 @@ build:
   number: {{ build_number }}
   skip: True  # [s390x]  Missing dependencies.
   skip: True  # [win32]  Missing dependencies in win32 arch and not expecting they will be updated.
+  skip: True  # [pypy]
 
 requirements:
   build:
@@ -29,7 +30,7 @@ outputs:
     script: build-basemap.sh  # [not win]  This script will delete `pyproject.toml`. Remove ASAP.
     script: bld-basemap.bat   # [win]
     build:
-      skip: True  # [py<37]
+      skip: True  # [python_impl == 'pypy'] 
     requirements:
       build:
         - {{ compiler('c') }}
