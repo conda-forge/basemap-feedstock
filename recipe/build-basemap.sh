@@ -18,7 +18,7 @@ case $PKG_NAME in
         $PYTHON -m pip install packages/basemap_data --no-deps --ignore-installed -vvv
         ;;
 
-    tmp-basemap-data-hires)
+    basemap-data-hires)
         $PYTHON -m pip install packages/basemap_data_hires --no-deps --ignore-installed -vvv
         ;;
 
