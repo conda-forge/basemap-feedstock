@@ -15,6 +15,7 @@ EXIT 1
 
 
 :CASE_basemap
+  del packages\basemap\pyproject.toml
   "%PYTHON%" -m pip install packages\basemap --no-deps --ignore-installed  -vvv
   IF errorlevel 1 EXIT 1
   GOTO CASE_end
