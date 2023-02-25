@@ -73,7 +73,8 @@ outputs:
       summary: Plot on map projections using matplotlib
       description: |
         Basemap toolkit is a library for plotting 2D data on maps in Python.
-        It is similar in functionality to the matlab mapping toolbox, the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
+        It is similar in functionality to the matlab mapping toolbox, the IDL
+        mapping facilities, GrADS, or the Generic Mapping Tools.
       dev_url: https://github.com/matplotlib/basemap
       doc_url: https://matplotlib.org/basemap/
       doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ version }}/packages/basemap/doc/index.rst
@@ -84,7 +85,6 @@ outputs:
     script: bld-basemap.bat   # [win]
     build:
       noarch: python
-      skip: true  # [build_platform != target_platform]
     requirements:
       host:
         - pip
@@ -107,7 +107,6 @@ outputs:
     script: bld-basemap.bat   # [win]
     build:
       noarch: python
-      skip: true  # [build_platform != target_platform]
     requirements:
       host:
         - pip
