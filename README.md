@@ -11,6 +11,7 @@ Home: https://matplotlib.org/basemap
 Package license: MIT
 
 Summary: split for basemap.
+
 About basemap-data
 ------------------
 
@@ -23,6 +24,7 @@ Summary: Plot on map projections (with coastlines and political boundaries) usin
 Development: https://github.com/matplotlib/basemap
 
 Documentation: https://matplotlib.org/basemap/
+
 About basemap
 -------------
 
@@ -52,12 +54,12 @@ Development: https://github.com/matplotlib/basemap
 
 Documentation: https://matplotlib.org/basemap/
 
+
 Current build status
 ====================
 
-
 <table>
-    
+
   <tr>
     <td>Azure</td>
     <td>
@@ -161,6 +163,7 @@ Current build status
   </tr>
 </table>
 
+
 Current release info
 ====================
 
@@ -169,6 +172,7 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-basemap-green.svg)](https://anaconda.org/conda-forge/basemap) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/basemap.svg)](https://anaconda.org/conda-forge/basemap) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/basemap.svg)](https://anaconda.org/conda-forge/basemap) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/basemap.svg)](https://anaconda.org/conda-forge/basemap) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-basemap--data-green.svg)](https://anaconda.org/conda-forge/basemap-data) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/basemap-data.svg)](https://anaconda.org/conda-forge/basemap-data) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/basemap-data.svg)](https://anaconda.org/conda-forge/basemap-data) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/basemap-data.svg)](https://anaconda.org/conda-forge/basemap-data) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-basemap--data--hires-green.svg)](https://anaconda.org/conda-forge/basemap-data-hires) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/basemap-data-hires.svg)](https://anaconda.org/conda-forge/basemap-data-hires) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/basemap-data-hires.svg)](https://anaconda.org/conda-forge/basemap-data-hires) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/basemap-data-hires.svg)](https://anaconda.org/conda-forge/basemap-data-hires) |
+
 
 Installing basemap-split
 ========================
@@ -246,6 +250,7 @@ this feedstock's supporting files (e.g. the CI configuration files) with ``conda
 
 For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
+
 Terminology
 ===========
 
@@ -287,4 +292,3 @@ Feedstock Maintainers
 * [@ReimarBauer](https://github.com/ReimarBauer/)
 * [@molinav](https://github.com/molinav/)
 * [@ocefpaf](https://github.com/ocefpaf/)
-
