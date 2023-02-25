@@ -32,6 +32,7 @@ outputs:
       skip: true  # [python_impl == 'pypy']
     requirements:
       build:
+        - cross-python_{{ target_platform }}  # [build_platform != target_platform]
         - python
         - cython >=0.29,<3.1
         - {{ compiler('c') }}
