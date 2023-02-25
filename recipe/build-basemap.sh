@@ -1,30 +1,23 @@
 #! /bin/sh
 
-echo "===================================================================================================="
-echo "Building $PKG_NAME"
+echo "======================================================================="
+echo "Building ${PKG_NAME}"
 echo ""
 
-# Ensure our geos will be used.
-export GEOS_DIR=$PREFIX
+# Avoid TOML files for now.
+rm -f packages/basemap/pyproject.toml
 
-case $PKG_NAME in
+# Ensure our GEOS library will be used.
+export GEOS_DIR=${PREFIX}
 
-    basemap)
-        rm -f packages/basemap/pyproject.toml
-        $PYTHON -m pip install packages/basemap --no-deps --ignore-installed -vvv
+# Select based on the three `basemap-split` packages.
+case ${PKG_NAME} in
+    basemap|basemap-data|basemap-data-hires)
+        pkgdir="packages/$(echo ${PKG_NAME} | tr - _)"
+        ${PYTHON} -m pip install -vvv --ignore-installed --no-deps ${pkgdir}
         ;;
-
-    basemap-data)
-        $PYTHON -m pip install packages/basemap_data --no-deps --ignore-installed -vvv
-        ;;
-
-    basemap-data-hires)
-        $PYTHON -m pip install packages/basemap_data_hires --no-deps --ignore-installed -vvv
-        ;;
-
     *)
-        echo "No build instructions for $PKG_NAME"
+        echo "No build instructions for ${PKG_NAME}"
         exit 1
         ;;
-
 esac
