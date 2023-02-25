@@ -96,7 +96,7 @@ outputs:
       license: LGPL-3.0-or-later
       license_family: LGPL
       license_file: packages/basemap_data/COPYING.LESSER
-      summary: Plot on map projections (with coastlines and political boundaries) using matplotlib.
+      summary: Data assets for matplotlib basemap.
       dev_url: https://github.com/matplotlib/basemap
       doc_url: https://matplotlib.org/basemap/
       doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ version }}/packages/basemap/doc/index.rst
@@ -120,7 +120,7 @@ outputs:
       license: LGPL-3.0-or-later
       license_family: LGPL
       license_file: packages/basemap_data_hires/COPYING.LESSER
-      summary: Plot on map projections (with coastlines and political boundaries) using matplotlib.
+      summary: High-resolution data assets for matplotlib basemap.
       dev_url: https://github.com/matplotlib/basemap
       doc_url: https://matplotlib.org/basemap/
       doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ version }}/packages/basemap/doc/index.rst
@@ -129,7 +129,7 @@ about:
   home: https://matplotlib.org/basemap
   license: MIT
   license_family: MIT
-  summary: split for basemap.
+  summary: Split for basemap.
   license_file:
     - packages/basemap/LICENSE
 

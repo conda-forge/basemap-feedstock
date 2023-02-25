@@ -10,20 +10,7 @@ Home: https://matplotlib.org/basemap
 
 Package license: MIT
 
-Summary: split for basemap.
-
-About basemap-data
-------------------
-
-Home: https://matplotlib.org/basemap
-
-Package license: LGPL-3.0-or-later
-
-Summary: Plot on map projections (with coastlines and political boundaries) using matplotlib.
-
-Development: https://github.com/matplotlib/basemap
-
-Documentation: https://matplotlib.org/basemap/
+Summary: Split for basemap package.
 
 About basemap
 -------------
@@ -41,6 +28,19 @@ Documentation: https://matplotlib.org/basemap/
 Basemap toolkit is a library for plotting 2D data on maps in Python.
 It is similar in functionality to the matlab mapping toolbox, the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
 
+About basemap-data
+------------------
+
+Home: https://matplotlib.org/basemap
+
+Package license: LGPL-3.0-or-later
+
+Summary: Data assets for matplotlib basemap.
+
+Development: https://github.com/matplotlib/basemap
+
+Documentation: https://matplotlib.org/basemap/
+
 About basemap-data-hires
 ------------------------
 
@@ -48,7 +48,7 @@ Home: https://matplotlib.org/basemap
 
 Package license: LGPL-3.0-or-later
 
-Summary: Plot on map projections (with coastlines and political boundaries) using matplotlib.
+Summary: High-resolution data assets for matplotlib basemap.
 
 Development: https://github.com/matplotlib/basemap
 
