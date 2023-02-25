@@ -84,6 +84,7 @@ outputs:
     script: bld-basemap.bat   # [win]
     build:
       noarch: python
+      skip: true  # [build_platform != target_platform]
     requirements:
       host:
         - pip
@@ -106,6 +107,7 @@ outputs:
     script: bld-basemap.bat   # [win]
     build:
       noarch: python
+      skip: true  # [build_platform != target_platform]
     requirements:
       host:
         - pip
