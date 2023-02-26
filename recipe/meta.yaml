@@ -28,8 +28,6 @@ outputs:
   - name: basemap
     script: build-basemap.sh  # [not win]  This script will delete `pyproject.toml`. Remove ASAP.
     script: bld-basemap.bat   # [win]  This script will delete `pyproject.toml`. Remove ASAP.
-    build:
-      skip: true  # [python_impl == 'pypy']
     requirements:
       build:
         - python                              # [build_platform != target_platform]
