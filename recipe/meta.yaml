@@ -87,6 +87,7 @@ outputs:
       noarch: python
     requirements:
       host:
+        - python
         - pip
         - setuptools <60.0.0
       run:
@@ -109,6 +110,7 @@ outputs:
       noarch: python
     requirements:
       host:
+        - python
         - pip
         - setuptools <60.0.0
       run:
