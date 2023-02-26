@@ -13,6 +13,10 @@ export GEOS_DIR=${PREFIX}
 # Proceed based on the `basemap-split` subpackages.
 case ${PKG_NAME} in
     basemap|basemap-data|basemap-data-hires)
+        if [ "${CONDA_BUILD_CROSS_COMPILATION}" = "1" ]; then
+            rm ${BUILD_PREFIX}/bin/python
+            ln -sf ${PREFIX}/bin/python ${BUILD_PREFIX}/bin/python
+        fi
         pkgdir="packages/$(echo ${PKG_NAME} | tr - _)"
         ${PYTHON} -m pip install -vvv --ignore-installed --no-deps ${pkgdir}
         ;;
