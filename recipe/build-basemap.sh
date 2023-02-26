@@ -1,7 +1,7 @@
 #! /bin/sh
 
 echo "======================================================================="
-echo "Building ${PKG_NAME}"
+echo "Started ${PKG_NAME} build"
 echo ""
 
 # Avoid TOML files for now.
@@ -11,13 +11,26 @@ rm -f packages/basemap/pyproject.toml
 export GEOS_DIR=${PREFIX}
 
 # Override Python if building noarch on a cross-compiling environment.
+PYTHON_ORIG="${PYTHON}"
 case ${PKG_NAME} in
+    basemap)
+        if [ "${CONDA_BUILD_CROSS_COMPILATION}" = "1" ]; then
+            export PYTHON=${PREFIX}/bin/python
+        fi
+    ;;
     basemap-data|basemap-data-hires)
         if [ "${CONDA_BUILD_CROSS_COMPILATION}" = "1" ]; then
-            ln -sf ${PREFIX}/bin/python ${BUILD_PREFIX}/bin/python
+            export PYTHON=${BUILD_PREFIX}/bin/python
         fi
     ;;
 esac
+
+echo "PYTHON: ${PYTHON}"
+${PYTHON} -V --version
+echo "BUILD_PREFIX: ${BUILD_PREFIX}"
+ls -la ${BUILD_PREFIX}
+echo "PREFIX: ${PREFIX}"
+ls -la ${PREFIX}
 
 # Proceed based on the `basemap-split` subpackages.
 case ${PKG_NAME} in
@@ -30,3 +43,14 @@ case ${PKG_NAME} in
         exit 1
         ;;
 esac
+
+export PYTHON="${PYTHON_ORIG}"
+echo "PYTHON: ${PYTHON}"
+echo "BUILD_PREFIX: ${BUILD_PREFIX}"
+ls -la ${BUILD_PREFIX}
+echo "PREFIX: ${PREFIX}"
+ls -la ${PREFIX}
+
+echo ""
+echo "Finished ${PKG_NAME} build"
+echo "======================================================================="
