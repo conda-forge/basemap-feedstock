@@ -10,7 +10,6 @@ source:
   sha256: 94e6207328b476f70835cb7dce5925e703114fda8b168d0e87f9cf44d69fc41c
   patches:
     - fix_install_hires_instructions.patch
-    - fix_numpy_requirements.patch
 
 build:
   number: {{ build_number }}
