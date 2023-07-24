@@ -3,6 +3,7 @@ About basemap-split-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/basemap-feedstock/blob/main/LICENSE.txt)
 
+
 About basemap-split
 -------------------
 
@@ -11,6 +12,7 @@ Home: https://matplotlib.org/basemap
 Package license: MIT
 
 Summary: split for basemap.
+
 About basemap-data
 ------------------
 
@@ -23,6 +25,7 @@ Summary: Plot on map projections (with coastlines and political boundaries) usin
 Development: https://github.com/matplotlib/basemap
 
 Documentation: https://matplotlib.org/basemap/
+
 About basemap
 -------------
 
@@ -38,6 +41,7 @@ Documentation: https://matplotlib.org/basemap/
 
 Basemap toolkit is a library for plotting 2D data on maps in Python.
 It is similar in functionality to the matlab mapping toolbox, the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
+
 
 About basemap-data-hires
 ------------------------
@@ -123,6 +127,34 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____cpythonpython_implcpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_python3.11.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_python3.8.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
