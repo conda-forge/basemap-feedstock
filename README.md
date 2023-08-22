@@ -3,6 +3,7 @@ About basemap-split-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/basemap-feedstock/blob/main/LICENSE.txt)
 
+
 About basemap-split
 -------------------
 
@@ -11,6 +12,7 @@ Home: https://matplotlib.org/basemap
 Package license: MIT
 
 Summary: split for basemap.
+
 About basemap-data
 ------------------
 
@@ -23,6 +25,7 @@ Summary: Plot on map projections (with coastlines and political boundaries) usin
 Development: https://github.com/matplotlib/basemap
 
 Documentation: https://matplotlib.org/basemap/
+
 About basemap
 -------------
 
@@ -38,6 +41,7 @@ Documentation: https://matplotlib.org/basemap/
 
 Basemap toolkit is a library for plotting 2D data on maps in Python.
 It is similar in functionality to the matlab mapping toolbox, the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
+
 
 About basemap-data-hires
 ------------------------
