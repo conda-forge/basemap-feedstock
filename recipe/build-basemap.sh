@@ -7,6 +7,12 @@ echo ""
 # Ensure our geos will be used.
 export GEOS_DIR=$PREFIX
 
+# Temporary workaround when cross-compiling.
+if [ "${CONDA_BUILD_CROSS_COMPILATION}" = "1" ]; then
+    rm ${BUILD_PREFIX}/bin/python
+    ln -sf ${PREFIX}/bin/python ${BUILD_PREFIX}/bin/python
+fi
+
 case $PKG_NAME in
 
     basemap)
