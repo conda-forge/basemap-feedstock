@@ -1,36 +1,31 @@
 #!/bin/bash
 
-echo "===================================================================================================="
-echo "Building $PKG_NAME"
+echo "========================================================================"
+echo "Building ${PKG_NAME}"
 echo ""
 
-# Ensure our geos will be used.
-export GEOS_DIR=$PREFIX
+# Ensure our GEOS will be used.
+export GEOS_DIR="${PREFIX}"
 
 # Temporary workaround when cross-compiling.
-if [ "${CONDA_BUILD_CROSS_COMPILATION}" = "1" ]; then
+if [ "${CONDA_BUILD_CROSS_COMPILATION}" = "1" -a "${PKG_NAME}" = "basemap" ]; then
     rm ${BUILD_PREFIX}/bin/python
     ln -sf ${PREFIX}/bin/python ${BUILD_PREFIX}/bin/python
 fi
 
-case $PKG_NAME in
-
+case "${PKG_NAME}" in
     basemap)
         rm -f packages/basemap/pyproject.toml
-        $PYTHON -m pip install packages/basemap --no-deps --ignore-installed -vvv
-        ;;
-
+        ${PYTHON} -m pip install packages/basemap --no-deps --ignore-installed -vvv
+    ;;
     basemap-data)
-        $PYTHON -m pip install packages/basemap_data --no-deps --ignore-installed -vvv
-        ;;
-
+        ${PYTHON} -m pip install packages/basemap_data --no-deps --ignore-installed -vvv
+    ;;
     basemap-data-hires)
-        $PYTHON -m pip install packages/basemap_data_hires --no-deps --ignore-installed -vvv
-        ;;
-
+        ${PYTHON} -m pip install packages/basemap_data_hires --no-deps --ignore-installed -vvv
+    ;;
     *)
-        echo "No build instructions for $PKG_NAME"
+        echo "No build instructions for ${PKG_NAME}"
         exit 1
-        ;;
-
+    ;;
 esac
