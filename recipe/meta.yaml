@@ -13,7 +13,9 @@ source:
 
 build:
   number: {{ build_number }}
+  # Missing dependencies in s390x.
   skip: true  # [s390x]
+  # Missing dependencies in win32 and not expecting they will be updated.
   skip: true  # [win32]
   skip: true  # [python_impl == 'pypy']
 
@@ -25,8 +27,9 @@ requirements:
 outputs:
 
   - name: basemap
+    # These scripts will delete `pyproject.toml`. Remove ASAP.
     script: build-basemap.sh  # [not win]
-    script: bld-basemap.bat  # [win]
+    script: bld-basemap.bat   # [win]
     build:
       skip: true  # [python_impl == 'pypy']
     requirements:
@@ -78,7 +81,7 @@ outputs:
   - name: basemap-data
     version: 1.3.2
     script: build-basemap.sh  # [not win]
-    script: bld-basemap.bat  # [win]
+    script: bld-basemap.bat   # [win]
     build:
       noarch: python
     requirements:
@@ -101,7 +104,7 @@ outputs:
   - name: basemap-data-hires
     version: 1.3.2
     script: build-basemap.sh  # [not win]
-    script: bld-basemap.bat  # [win]
+    script: bld-basemap.bat   # [win]
     build:
       noarch: python
     requirements:
