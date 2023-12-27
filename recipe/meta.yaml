@@ -1,6 +1,9 @@
 {% set version = "1.3.9" %}
 {% set build_number = 0 %}
 
+{% set data_version = "1.3.2" %}
+{% set data_build_number = 0 %}
+
 package:
   name: basemap-split
   version: {{ version }}
@@ -13,12 +16,11 @@ source:
     - fix_numpy_requirements.patch
 
 build:
-  number: {{ build_number }}
+  skip: true  # [python_impl == 'pypy']
   # Missing dependencies in s390x.
   skip: true  # [s390x]
   # Missing dependencies in win32 and not expecting they will be updated.
   skip: true  # [win32]
-  skip: true  # [python_impl == 'pypy']
 
 requirements:
   build:
@@ -28,11 +30,12 @@ requirements:
 outputs:
 
   - name: basemap
+    version: {{ version }}
     # These scripts will delete `pyproject.toml`. Remove ASAP.
     script: build-basemap.sh  # [not win]
     script: bld-basemap.bat   # [win]
     build:
-      skip: true  # [python_impl == 'pypy']
+      number: {{ build_number }}
     requirements:
       build:
         - python                                 # [build_platform != target_platform]
@@ -91,10 +94,11 @@ outputs:
 
 {% if target_platform != "osx-arm64" %}
   - name: basemap-data
-    version: 1.3.2
+    version: {{ data_version }}
     script: build-basemap.sh  # [not win]
     script: bld-basemap.bat   # [win]
     build:
+      number: {{ data_build_number }}
       noarch: python
     requirements:
       host:
@@ -114,10 +118,11 @@ outputs:
       doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ version }}/packages/basemap/doc/index.rst
 
   - name: basemap-data-hires
-    version: 1.3.2
+    version: {{ data_version }}
     script: build-basemap.sh  # [not win]
     script: bld-basemap.bat   # [win]
     build:
+      number: {{ data_build_number }}
       noarch: python
     requirements:
       host:
