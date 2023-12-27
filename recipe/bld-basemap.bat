@@ -1,8 +1,8 @@
-ECHO "===================================================================================================="
+ECHO "========================================================================"
 ECHO "Building %PKG_NAME%"
 ECHO ""
 
-:: Ensure our geos will be used.
+:: Ensure our GEOS will be used.
 set GEOS_DIR=%LIBRARY_PREFIX%
 
 :: Jump to the correct build section
@@ -13,22 +13,17 @@ if "%PKG_NAME%"=="basemap-data-hires" GOTO CASE_basemap_data_hires
 ECHO "Unknown package: %PKG_NAME%"
 EXIT 1
 
-
 :CASE_basemap
   del packages\basemap\pyproject.toml
-  "%PYTHON%" -m pip install packages\basemap --no-deps --ignore-installed  -vvv
+  "%PYTHON%" -m pip install --no-deps --ignore-installed -vvv packages\basemap
   IF errorlevel 1 EXIT 1
   GOTO CASE_end
-
 :CASE_basemap_data
-  "%PYTHON%" -m pip install packages\basemap_data --no-deps --ignore-installed  -vvv
+  "%PYTHON%" -m pip install --no-deps --ignore-installed -vvv packages\basemap_data
   IF errorlevel 1 EXIT 1
   GOTO CASE_end
-
 :CASE_basemap_data_hires
-  "%PYTHON%" -m pip install packages\basemap_data_hires --no-deps --ignore-installed  -vvv
+  "%PYTHON%" -m pip install --no-deps --ignore-installed -vvv packages\basemap_data_hires
   IF errorlevel 1 EXIT 1
   GOTO CASE_end
-
-
 :CASE_END
