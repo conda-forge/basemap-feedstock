@@ -16,6 +16,7 @@ source:
     - fix_numpy_requirements.patch
 
 build:
+  number: {{ build_number }}
   skip: true  # [python_impl == 'pypy']
   # Missing dependencies in s390x.
   skip: true  # [s390x]
