@@ -38,10 +38,10 @@ outputs:
       number: {{ build_number }}
     requirements:
       build:
-        - python                                 # [build_platform != target_platform]
-        - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-        - cython >=0.29,<3.0                     # [build_platform != target_platform]
-        - numpy >=1.21                           # [build_platform != target_platform]
+        - python                              # [build_platform != target_platform]
+        - cross-python_{{ target_platform }}  # [build_platform != target_platform]
+        - cython >=0.29,<3.0                  # [build_platform != target_platform]
+        - numpy >=1.21                        # [build_platform != target_platform]
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
       host:
@@ -76,10 +76,11 @@ outputs:
       license_family: MIT
       license_file:
         - packages/basemap/LICENSE
-      summary: Plot on map projections using matplotlib
+      summary: Plot data on map projections with matplotlib
       description: |
         Basemap toolkit is a library for plotting 2D data on maps in Python.
-        It is similar in functionality to the matlab mapping toolbox, the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
+        It is similar in functionality to the matlab mapping toolbox,
+        the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
       dev_url: https://github.com/matplotlib/basemap
       doc_url: https://matplotlib.org/basemap/
       doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ version }}/packages/basemap/doc/index.rst
@@ -104,10 +105,10 @@ outputs:
       license: LGPL-3.0-or-later
       license_family: LGPL
       license_file: packages/basemap_data/COPYING.LESSER
-      summary: Plot on map projections (with coastlines and political boundaries) using matplotlib.
+      summary: Data assets for matplotlib basemap
       dev_url: https://github.com/matplotlib/basemap
       doc_url: https://matplotlib.org/basemap/
-      doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ version }}/packages/basemap/doc/index.rst
+      doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ data_version }}/packages/basemap/doc/index.rst
 
   - name: basemap-data-hires
     version: {{ data_version }}
@@ -129,17 +130,17 @@ outputs:
       license: LGPL-3.0-or-later
       license_family: LGPL
       license_file: packages/basemap_data_hires/COPYING.LESSER
-      summary: Plot on map projections (with coastlines and political boundaries) using matplotlib.
+      summary: High-resolution data assets for matplotlib basemap
       dev_url: https://github.com/matplotlib/basemap
       doc_url: https://matplotlib.org/basemap/
-      doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ version }}/packages/basemap/doc/index.rst
+      doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ data_version }}/packages/basemap/doc/index.rst
 {% endif %}
 
 about:
   home: https://matplotlib.org/basemap
   license: MIT
   license_family: MIT
-  summary: split for basemap.
+  summary: Split feedstock for basemap
   license_file:
     - packages/basemap/LICENSE
 
