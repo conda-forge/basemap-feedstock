@@ -55,11 +55,7 @@ outputs:
         - pyproj
       run:
         - python
-{% if target_platform != "osx-arm64" %}
-        - {{ pin_subpackage('basemap-data') }}
-{% else %}
-        - {{ pin_compatible('basemap-data') }}
-{% endif %}
+        - {{ pin_compatible('basemap-data', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('numpy') }}
         - {{ pin_compatible('geos') }}
         - matplotlib-base >=1.5,<3.8
@@ -70,11 +66,7 @@ outputs:
         - mpl_toolkits.basemap
       requires:
         - pip
-{% if target_platform != "osx-arm64" %}
-        - {{ pin_subpackage('basemap-data') }}
-{% else %}
-        - {{ pin_compatible('basemap-data') }}
-{% endif %}
+        - {{ pin_compatible('basemap-data', min_pin='x.x', max_pin='x.x') }}
       commands:
         - pip check
         - python -c "from mpl_toolkits.basemap import Basemap"
@@ -92,7 +84,7 @@ outputs:
       doc_url: https://matplotlib.org/basemap/
       doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ version }}/packages/basemap/doc/index.rst
 
-{% if target_platform != "osx-arm64" %}
+{% if build_platform == target_platform %}
   - name: basemap-data
     version: {{ data_version }}
     script: build-basemap.sh  # [not win]
@@ -131,7 +123,7 @@ outputs:
         - wheel
       run:
         - python
-        - {{ pin_subpackage('basemap-data') }}
+        - {{ pin_subpackage('basemap-data', min_pin='x.x', max_pin='x.x') }}
     about:
       home: https://matplotlib.org/basemap
       license: LGPL-3.0-or-later
