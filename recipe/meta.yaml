@@ -1,4 +1,4 @@
-{% set version = "1.3.9" %}
+{% set version = "1.4.0" %}
 {% set build_number = 0 %}
 
 {% set data_version = "1.3.2" %}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/matplotlib/basemap/archive/v{{ version }}.tar.gz
-  sha256: 44ae3764595778077d4bc40b0756c90f483b816927e82206e9f376e31a2dc533
+  sha256: a5cec3035825608802d672e6ccf7d85fd26db6994ca7c9cf5824121d5c923a4f
   patches:
     - patches/fix_install_hires_instructions.patch
     - patches/fix_numpy_requirements.patch
@@ -34,7 +34,7 @@ outputs:
     version: {{ version }}
     # These scripts will delete `pyproject.toml`. Remove ASAP.
     script: build-basemap.sh  # [not win]
-    script: bld-basemap.bat   # [win]
+    script: bld-basemap.bat  # [win]
     build:
       number: {{ build_number }}
     requirements:
@@ -90,7 +90,7 @@ outputs:
   - name: basemap-data
     version: {{ data_version }}
     script: build-basemap.sh  # [not win]
-    script: bld-basemap.bat   # [win]
+    script: bld-basemap.bat  # [win]
     build:
       number: {{ data_build_number }}
       noarch: python
@@ -114,7 +114,7 @@ outputs:
   - name: basemap-data-hires
     version: {{ data_version }}
     script: build-basemap.sh  # [not win]
-    script: bld-basemap.bat   # [win]
+    script: bld-basemap.bat  # [win]
     build:
       number: {{ data_build_number }}
       noarch: python
