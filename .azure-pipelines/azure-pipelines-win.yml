@@ -8,8 +8,8 @@ jobs:
     vmImage: windows-2022
   strategy:
     matrix:
-      win_64_python3.10.____cpythonpython_implcpython:
-        CONFIG: win_64_python3.10.____cpythonpython_implcpython
+      win_64_python3.10.____cpythonpython_implpypy:
+        CONFIG: win_64_python3.10.____cpythonpython_implpypy
         UPLOAD_PACKAGES: 'True'
       win_64_python3.11.____cpythonpython_implcpython:
         CONFIG: win_64_python3.11.____cpythonpython_implcpython
