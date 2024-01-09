@@ -40,7 +40,7 @@ outputs:
       build:
         - python                              # [build_platform != target_platform]
         - cross-python_{{ target_platform }}  # [build_platform != target_platform]
-        - cython >=0.29,<3.0                  # [build_platform != target_platform]
+        - cython >=0.29,<3.1                  # [build_platform != target_platform]
         - numpy >=1.21                        # [build_platform != target_platform]
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
@@ -49,7 +49,7 @@ outputs:
         - pip
         - setuptools
         - wheel
-        - cython >=0.29,<3.0
+        - cython >=0.29,<3.1
         - numpy >=1.21
         - geos
         - pyproj
