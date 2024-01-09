@@ -11,7 +11,7 @@ Home: https://matplotlib.org/basemap
 
 Package license: MIT
 
-Summary: split for basemap.
+Summary: Split feedstock for basemap
 
 About basemap-data
 ------------------
@@ -20,7 +20,7 @@ Home: https://matplotlib.org/basemap
 
 Package license: LGPL-3.0-or-later
 
-Summary: Plot on map projections (with coastlines and political boundaries) using matplotlib.
+Summary: Data assets for matplotlib basemap
 
 Development: https://github.com/matplotlib/basemap
 
@@ -33,14 +33,15 @@ Home: https://matplotlib.org/basemap
 
 Package license: MIT
 
-Summary: Plot on map projections using matplotlib
+Summary: Plot data on map projections with matplotlib
 
 Development: https://github.com/matplotlib/basemap
 
 Documentation: https://matplotlib.org/basemap/
 
 Basemap toolkit is a library for plotting 2D data on maps in Python.
-It is similar in functionality to the matlab mapping toolbox, the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
+It is similar in functionality to the matlab mapping toolbox,
+the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
 
 
 About basemap-data-hires
@@ -50,7 +51,7 @@ Home: https://matplotlib.org/basemap
 
 Package license: LGPL-3.0-or-later
 
-Summary: Plot on map projections (with coastlines and political boundaries) using matplotlib.
+Summary: High-resolution data assets for matplotlib basemap
 
 Development: https://github.com/matplotlib/basemap
 
@@ -74,10 +75,10 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_python3.10.____cpythonpython_implcpython</td>
+              <td>linux_64_python3.10.____cpythonpython_implpypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpythonpython_implpypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -102,10 +103,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.10.____cpythonpython_implcpython</td>
+              <td>osx_64_python3.10.____cpythonpython_implpypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpythonpython_implpypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -144,6 +145,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_arm64_python3.8.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_arm64_python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
@@ -151,10 +159,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_python3.10.____cpythonpython_implcpython</td>
+              <td>win_64_python3.10.____cpythonpython_implpypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.10.____cpythonpython_implpypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -312,7 +320,4 @@ Feedstock Maintainers
 * [@ReimarBauer](https://github.com/ReimarBauer/)
 * [@molinav](https://github.com/molinav/)
 * [@ocefpaf](https://github.com/ocefpaf/)
-
-
-<!-- dummy commit to enable rerendering -->
 
