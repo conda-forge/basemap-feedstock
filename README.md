@@ -11,7 +11,7 @@ Home: https://matplotlib.org/basemap
 
 Package license: MIT
 
-Summary: split for basemap.
+Summary: Split feedstock for basemap
 
 About basemap-data
 ------------------
@@ -20,7 +20,7 @@ Home: https://matplotlib.org/basemap
 
 Package license: LGPL-3.0-or-later
 
-Summary: Plot on map projections (with coastlines and political boundaries) using matplotlib.
+Summary: Data assets for matplotlib basemap
 
 Development: https://github.com/matplotlib/basemap
 
@@ -33,14 +33,15 @@ Home: https://matplotlib.org/basemap
 
 Package license: MIT
 
-Summary: Plot on map projections using matplotlib
+Summary: Plot data on map projections with matplotlib
 
 Development: https://github.com/matplotlib/basemap
 
 Documentation: https://matplotlib.org/basemap/
 
 Basemap toolkit is a library for plotting 2D data on maps in Python.
-It is similar in functionality to the matlab mapping toolbox, the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
+It is similar in functionality to the matlab mapping toolbox,
+the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
 
 
 About basemap-data-hires
@@ -50,7 +51,7 @@ Home: https://matplotlib.org/basemap
 
 Package license: LGPL-3.0-or-later
 
-Summary: Plot on map projections (with coastlines and political boundaries) using matplotlib.
+Summary: High-resolution data assets for matplotlib basemap
 
 Development: https://github.com/matplotlib/basemap
 
@@ -141,6 +142,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_python3.8.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
