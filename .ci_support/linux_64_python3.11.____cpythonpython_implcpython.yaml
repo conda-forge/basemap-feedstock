@@ -23,7 +23,7 @@ pin_run_as_build:
 python:
 - 3.11.* *_cpython
 python_impl:
-- pypy
+- cpython
 target_platform:
 - linux-64
 zip_keys:
