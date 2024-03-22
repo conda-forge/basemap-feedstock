@@ -10,6 +10,8 @@ github:
   tooling_branch_name: main
 provider:
   linux: azure
+  linux_aarch64: default
+  linux_ppc64le: default
   osx: azure
   win: azure
 test: native_and_emulated
