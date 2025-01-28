@@ -42,6 +42,7 @@ outputs:
         - cross-python_{{ target_platform }}  # [build_platform != target_platform]
         - cython >=0.29,<3.1                  # [build_platform != target_platform]
         - numpy >=1.21                        # [build_platform != target_platform]
+        - numpy                               # [build_platform != target_platform]
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
       host:
@@ -51,11 +52,12 @@ outputs:
         - wheel
         - cython >=0.29,<3.1
         - numpy >=1.21
+        - numpy
         - geos
         - pyproj
       run:
         - python
-        - {{ pin_compatible('basemap-data', min_pin='x.x', max_pin='x.x') }}
+        - {{ pin_subpackage('basemap-data', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('numpy', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('geos', min_pin='x.x.x', max_pin='x.x.x') }}
         - matplotlib-base >=1.5,<3.9
@@ -66,7 +68,7 @@ outputs:
         - mpl_toolkits.basemap
       requires:
         - pip
-        - {{ pin_compatible('basemap-data', min_pin='x.x', max_pin='x.x') }}
+        - {{ pin_subpackage('basemap-data', min_pin='x.x', max_pin='x.x') }}
       commands:
         - pip check
         - python -c "from mpl_toolkits.basemap import Basemap"
@@ -95,6 +97,7 @@ outputs:
       noarch: python
     requirements:
       host:
+        - python {{ python_min }}
         - pip
         - setuptools
         - wheel
@@ -119,6 +122,7 @@ outputs:
       noarch: python
     requirements:
       host:
+        - python {{ python_min }}
         - pip
         - setuptools
         - wheel
