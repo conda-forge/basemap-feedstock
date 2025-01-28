@@ -16,6 +16,9 @@ source:
   patches:
     - patches/fix_install_hires_instructions.patch
 
+build:
+  number: {{ build_number }}
+
 requirements:
   build:
     - m2-patch  # [win]
@@ -93,6 +96,7 @@ outputs:
     build:
       number: {{ data_build_number }}
       noarch: python
+      skip: true  # [py<310]
     requirements:
       build:
         - python {{ python_min }}             # [build_platform != target_platform]
@@ -121,6 +125,7 @@ outputs:
     build:
       number: {{ data_build_number }}
       noarch: python
+      skip: true  # [py<310]
     requirements:
       build:
         - python {{ python_min }}             # [build_platform != target_platform]
