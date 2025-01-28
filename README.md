@@ -3,17 +3,230 @@ About basemap-split-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/basemap-feedstock/blob/main/LICENSE.txt)
 
+
+About basemap-split
+-------------------
+
 Home: https://matplotlib.org/basemap
 
 Package license: MIT
 
 Summary: Split feedstock for basemap
 
+About basemap-data
+------------------
+
+Home: https://matplotlib.org/basemap
+
+Package license: LGPL-3.0-or-later
+
+Summary: Data assets for matplotlib basemap
+
+Development: https://github.com/matplotlib/basemap
+
+Documentation: https://matplotlib.org/basemap/
+
+About basemap
+-------------
+
+Home: https://matplotlib.org/basemap
+
+Package license: MIT
+
+Summary: Plot data on map projections with matplotlib
+
+Development: https://github.com/matplotlib/basemap
+
+Documentation: https://matplotlib.org/basemap/
+
+Basemap toolkit is a library for plotting 2D data on maps in Python.
+It is similar in functionality to the matlab mapping toolbox,
+the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
+
+
+About basemap-data-hires
+------------------------
+
+Home: https://matplotlib.org/basemap
+
+Package license: LGPL-3.0-or-later
+
+Summary: High-resolution data assets for matplotlib basemap
+
+Development: https://github.com/matplotlib/basemap
+
+Documentation: https://matplotlib.org/basemap/
+
 Current build status
 ====================
 
 
 <table>
+    
+  <tr>
+    <td>Azure</td>
+    <td>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_numpy1.22python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.22python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_numpy1.22python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.22python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_numpy1.23python3.11.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.23python3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_numpy1.26python3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.26python3.12.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_numpy1.22python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.22python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_numpy1.22python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.22python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_numpy1.23python3.11.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.23python3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_numpy1.26python3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.26python3.12.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_numpy1.22python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.22python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_numpy1.22python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.22python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_numpy1.23python3.11.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.23python3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_numpy1.26python3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.26python3.12.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_numpy1.22python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy1.22python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_numpy1.22python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy1.22python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_numpy1.23python3.11.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy1.23python3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_numpy1.26python3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy1.26python3.12.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_numpy1.22python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy1.22python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_numpy1.22python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy1.22python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_numpy1.23python3.11.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy1.23python3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_numpy1.26python3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy1.26python3.12.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </td>
+  </tr>
 </table>
 
 Current release info
@@ -21,7 +234,9 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-basemap--split-green.svg)](https://anaconda.org/conda-forge/basemap-split) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/basemap-split.svg)](https://anaconda.org/conda-forge/basemap-split) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/basemap-split.svg)](https://anaconda.org/conda-forge/basemap-split) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/basemap-split.svg)](https://anaconda.org/conda-forge/basemap-split) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-basemap-green.svg)](https://anaconda.org/conda-forge/basemap) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/basemap.svg)](https://anaconda.org/conda-forge/basemap) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/basemap.svg)](https://anaconda.org/conda-forge/basemap) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/basemap.svg)](https://anaconda.org/conda-forge/basemap) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-basemap--data-green.svg)](https://anaconda.org/conda-forge/basemap-data) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/basemap-data.svg)](https://anaconda.org/conda-forge/basemap-data) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/basemap-data.svg)](https://anaconda.org/conda-forge/basemap-data) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/basemap-data.svg)](https://anaconda.org/conda-forge/basemap-data) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-basemap--data--hires-green.svg)](https://anaconda.org/conda-forge/basemap-data-hires) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/basemap-data-hires.svg)](https://anaconda.org/conda-forge/basemap-data-hires) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/basemap-data-hires.svg)](https://anaconda.org/conda-forge/basemap-data-hires) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/basemap-data-hires.svg)](https://anaconda.org/conda-forge/basemap-data-hires) |
 
 Installing basemap-split
 ========================
@@ -33,41 +248,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `basemap-split` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `basemap, basemap-data, basemap-data-hires` can be installed with `conda`:
 
 ```
-conda install basemap-split
-```
-
-or with `mamba`:
-
-```
-mamba install basemap-split
-```
-
-It is possible to list all of the versions of `basemap-split` available on your platform with `conda`:
-
-```
-conda search basemap-split --channel conda-forge
+conda install basemap basemap-data basemap-data-hires
 ```
 
 or with `mamba`:
 
 ```
-mamba search basemap-split --channel conda-forge
+mamba install basemap basemap-data basemap-data-hires
+```
+
+It is possible to list all of the versions of `basemap` available on your platform with `conda`:
+
+```
+conda search basemap --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search basemap --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search basemap-split --channel conda-forge
+mamba repoquery search basemap --channel conda-forge
 
-# List packages depending on `basemap-split`:
-mamba repoquery whoneeds basemap-split --channel conda-forge
+# List packages depending on `basemap`:
+mamba repoquery whoneeds basemap --channel conda-forge
 
-# List dependencies of `basemap-split`:
-mamba repoquery depends basemap-split --channel conda-forge
+# List dependencies of `basemap`:
+mamba repoquery depends basemap --channel conda-forge
 ```
 
 

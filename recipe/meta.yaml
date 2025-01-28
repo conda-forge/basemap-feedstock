@@ -16,15 +16,6 @@ source:
   patches:
     - patches/fix_install_hires_instructions.patch
 
-build:
-  number: {{ build_number }}
-  skip: true  # [python_impl == 'pypy']
-  skip: true  # [py<310]
-  # Missing dependencies in s390x.
-  skip: true  # [s390x]
-  # Missing dependencies in win32 and not expecting they will be updated.
-  skip: true  # [win32]
-
 requirements:
   build:
     - m2-patch  # [win]
@@ -39,6 +30,8 @@ outputs:
     script: bld-basemap.bat  # [win]
     build:
       number: {{ build_number }}
+      skip: true  # [python_impl == 'pypy' or py<310 or win32 or s390x]
+
     requirements:
       build:
         - python                              # [build_platform != target_platform]
