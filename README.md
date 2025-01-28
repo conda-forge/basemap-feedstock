@@ -353,6 +353,7 @@ Feedstock Maintainers
 =====================
 
 * [@ReimarBauer](https://github.com/ReimarBauer/)
+* [@beckermr](https://github.com/beckermr/)
 * [@molinav](https://github.com/molinav/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
