@@ -56,7 +56,7 @@ outputs:
       run:
         - python
         - {{ pin_subpackage('basemap-data', min_pin='x.x', max_pin='x.x') }}
-        - {{ pin_compatible('numpy', min_pin='x.x', max_pin='x.x') }}
+        - {{ pin_compatible('numpy') }}
         - {{ pin_compatible('geos', min_pin='x.x.x', max_pin='x.x.x') }}
         - matplotlib-base >=1.5,<3.10a0
         - pyproj >=1.9.3,<3.7.0
