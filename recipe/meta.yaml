@@ -76,7 +76,7 @@ outputs:
         # removed for now until upstream moves to 3.10
         # - pip check
         - python -c "from mpl_toolkits.basemap import Basemap"
-        - python -c {{ RECIPE_DIR }}/run_test.py
+        - python {{ RECIPE_DIR }}/run_test.py
     about:
       home: https://matplotlib.org/basemap
       license: MIT
