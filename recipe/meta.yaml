@@ -73,7 +73,8 @@ outputs:
         - {{ pin_subpackage('basemap-data', min_pin='x.x', max_pin='x.x') }}
         - matplotlib-base >=3.9
       commands:
-        - pip check
+        # removed for now until upstream moves to 3.10
+        # - pip check
         - python -c "from mpl_toolkits.basemap import Basemap"
         - python -c {{ RECIPE_DIR }}/run_test.py
     about:
