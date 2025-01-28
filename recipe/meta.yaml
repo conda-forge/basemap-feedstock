@@ -75,6 +75,7 @@ outputs:
       commands:
         - pip check
         - python -c "from mpl_toolkits.basemap import Basemap"
+        - python -c {{ RECIPE_DIR }}/run_test.py
     about:
       home: https://matplotlib.org/basemap
       license: MIT
