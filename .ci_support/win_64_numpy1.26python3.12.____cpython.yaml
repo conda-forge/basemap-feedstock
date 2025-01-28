@@ -1,5 +1,7 @@
 c_compiler:
 - vs2019
+c_stdlib:
+- vs
 channel_sources:
 - conda-forge
 channel_targets:
@@ -7,17 +9,22 @@ channel_targets:
 cxx_compiler:
 - vs2019
 geos:
-- 3.12.1
+- 3.13.0
+numpy:
+- '1.26'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.8.* *_cpython
+- 3.12.* *_cpython
 python_impl:
 - cpython
+python_min:
+- '3.9'
 target_platform:
 - win-64
 zip_keys:
 - - python
+  - numpy
   - python_impl
