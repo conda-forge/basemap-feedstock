@@ -101,7 +101,6 @@ outputs:
     build:
       number: {{ data_build_number }}
       noarch: python
-      skip: true  # [py<310]
     requirements:
       build:
         - python {{ python_min }}             # [build_platform != target_platform]
@@ -130,7 +129,6 @@ outputs:
     build:
       number: {{ data_build_number }}
       noarch: python
-      skip: true  # [py<310]
     requirements:
       build:
         - python {{ python_min }}             # [build_platform != target_platform]
