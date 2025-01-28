@@ -64,6 +64,7 @@ outputs:
         - matplotlib-base >=1.5,<3.9
         - pyproj >=1.9.3,<3.7.0
         - pyshp >=1.2.0,<2.4.0
+        - packaging <24.0a0
     test:
       imports:
         - mpl_toolkits.basemap
