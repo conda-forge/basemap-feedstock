@@ -61,7 +61,7 @@ outputs:
         - {{ pin_subpackage('basemap-data', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('numpy', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('geos', min_pin='x.x.x', max_pin='x.x.x') }}
-        - matplotlib-base >=1.5,<3.9
+        - matplotlib-base >=1.5,<3.10a0
         - pyproj >=1.9.3,<3.7.0
         - pyshp >=1.2.0,<2.4.0
         - packaging <24.0a0
@@ -71,6 +71,7 @@ outputs:
       requires:
         - pip
         - {{ pin_subpackage('basemap-data', min_pin='x.x', max_pin='x.x') }}
+        - matplotlib-base >=3.9
       commands:
         - pip check
         - python -c "from mpl_toolkits.basemap import Basemap"
