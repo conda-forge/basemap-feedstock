@@ -39,7 +39,6 @@ outputs:
     script: bld-basemap.bat  # [win]
     build:
       number: {{ build_number }}
-      skip: true  # [py<310]
     requirements:
       build:
         - python                              # [build_platform != target_platform]
