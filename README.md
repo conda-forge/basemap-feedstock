@@ -13,6 +13,19 @@ Package license: MIT
 
 Summary: Split feedstock for basemap
 
+About basemap-data
+------------------
+
+Home: https://matplotlib.org/basemap
+
+Package license: LGPL-3.0-or-later
+
+Summary: Data assets for matplotlib basemap
+
+Development: https://github.com/matplotlib/basemap
+
+Documentation: https://matplotlib.org/basemap/
+
 About basemap
 -------------
 
@@ -30,6 +43,19 @@ Basemap toolkit is a library for plotting 2D data on maps in Python.
 It is similar in functionality to the matlab mapping toolbox,
 the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
 
+
+About basemap-data-hires
+------------------------
+
+Home: https://matplotlib.org/basemap
+
+Package license: LGPL-3.0-or-later
+
+Summary: High-resolution data assets for matplotlib basemap
+
+Development: https://github.com/matplotlib/basemap
+
+Documentation: https://matplotlib.org/basemap/
 
 Current build status
 ====================
@@ -49,31 +75,10 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_python3.10.____cpython</td>
+              <td>linux_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.11.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.12.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.12.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=85&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/basemap-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -230,6 +235,8 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-basemap-green.svg)](https://anaconda.org/conda-forge/basemap) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/basemap.svg)](https://anaconda.org/conda-forge/basemap) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/basemap.svg)](https://anaconda.org/conda-forge/basemap) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/basemap.svg)](https://anaconda.org/conda-forge/basemap) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-basemap--data-green.svg)](https://anaconda.org/conda-forge/basemap-data) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/basemap-data.svg)](https://anaconda.org/conda-forge/basemap-data) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/basemap-data.svg)](https://anaconda.org/conda-forge/basemap-data) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/basemap-data.svg)](https://anaconda.org/conda-forge/basemap-data) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-basemap--data--hires-green.svg)](https://anaconda.org/conda-forge/basemap-data-hires) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/basemap-data-hires.svg)](https://anaconda.org/conda-forge/basemap-data-hires) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/basemap-data-hires.svg)](https://anaconda.org/conda-forge/basemap-data-hires) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/basemap-data-hires.svg)](https://anaconda.org/conda-forge/basemap-data-hires) |
 
 Installing basemap-split
 ========================
@@ -241,16 +248,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `basemap` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `basemap, basemap-data, basemap-data-hires` can be installed with `conda`:
 
 ```
-conda install basemap
+conda install basemap basemap-data basemap-data-hires
 ```
 
 or with `mamba`:
 
 ```
-mamba install basemap
+mamba install basemap basemap-data basemap-data-hires
 ```
 
 It is possible to list all of the versions of `basemap` available on your platform with `conda`:
