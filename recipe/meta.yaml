@@ -34,7 +34,6 @@ outputs:
     build:
       number: {{ build_number }}
       skip: true  # [python_impl == 'pypy' or win32 or s390x]
-
     requirements:
       build:
         - python                              # [build_platform != target_platform]
