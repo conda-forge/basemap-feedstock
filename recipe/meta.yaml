@@ -4,7 +4,7 @@
 {% set data_version = "1.3.2" %}
 {% set data_build_number = 3 %}
 
-{% set python_min = "3.10" %}
+{% set python_min = "3.9" %}
 
 package:
   name: basemap-split
@@ -33,7 +33,7 @@ outputs:
     script: bld-basemap.bat  # [win]
     build:
       number: {{ build_number }}
-      skip: true  # [python_impl == 'pypy' or py<310 or win32 or s390x]
+      skip: true  # [python_impl == 'pypy' or win32 or s390x]
 
     requirements:
       build:
@@ -69,7 +69,7 @@ outputs:
         - {{ pin_subpackage('basemap-data', min_pin='x.x', max_pin='x.x') }}
         - matplotlib-base >=3.9
       commands:
-        # removed for now until upstream moves to 3.10
+        # Removed for now until upstream moves to 3.10.
         # - pip check
         - python -c "from mpl_toolkits.basemap import Basemap"
         - python {{ RECIPE_DIR }}/run_test.py
@@ -95,7 +95,6 @@ outputs:
     build:
       number: {{ data_build_number }}
       noarch: python
-      skip: true  # [py<310]
       string: "basemap_{{ data_build_number }}"
     requirements:
       build:
@@ -125,7 +124,6 @@ outputs:
     build:
       number: {{ data_build_number }}
       noarch: python
-      skip: true  # [py<310]
       string: "basemap_{{ data_build_number }}"
     requirements:
       build:
