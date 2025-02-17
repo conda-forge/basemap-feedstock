@@ -96,7 +96,7 @@ outputs:
       noarch: python
       force_ignore_keys:
         - python {{ python_min }}
-        - cross-python_{{ target_platform }}
+        - cross-python
     requirements:
       build:
         - python {{ python_min }}             # [build_platform != target_platform]
@@ -127,7 +127,7 @@ outputs:
       noarch: python
       force_ignore_keys:
         - python {{ python_min }}
-        - cross-python_{{ target_platform }}
+        - cross-python
     requirements:
       build:
         - python {{ python_min }}             # [build_platform != target_platform]
