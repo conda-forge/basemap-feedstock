@@ -94,13 +94,8 @@ outputs:
     build:
       number: {{ data_build_number }}
       noarch: python
-      force_ignore_keys:
-        - python {{ python_min }}
-        - cross-python
+      skip: true  # [build_platform != target_platform]
     requirements:
-      build:
-        - python {{ python_min }}             # [build_platform != target_platform]
-        - cross-python_{{ target_platform }}  # [build_platform != target_platform]
       host:
         - python {{ python_min }}
         - pip
@@ -125,13 +120,8 @@ outputs:
     build:
       number: {{ data_build_number }}
       noarch: python
-      force_ignore_keys:
-        - python {{ python_min }}
-        - cross-python
+      skip: true  # [build_platform != target_platform]
     requirements:
-      build:
-        - python {{ python_min }}             # [build_platform != target_platform]
-        - cross-python_{{ target_platform }}  # [build_platform != target_platform]
       host:
         - python {{ python_min }}
         - pip
