@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - vs2019
 geos:
-- 3.13.0
+- 3.13.1
 numpy:
 - '2.0'
 pin_run_as_build:
