@@ -19,7 +19,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-x86_64:alma9
 geos:
-- 3.13.0
+- 3.13.1
 numpy:
 - '2.0'
 - '2.0'
