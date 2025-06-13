@@ -2,7 +2,7 @@
 {% set build_number = 1 %}
 
 {% set data_version = "2.0.0" %}
-{% set data_build_number = 1 %}
+{% set data_build_number = 0 %}
 
 {% set python_min = "3.9" %}
 
