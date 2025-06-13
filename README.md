@@ -42,8 +42,6 @@ Summary: Data assets for matplotlib basemap
 
 Development: https://github.com/matplotlib/basemap
 
-Documentation: https://matplotlib.org/basemap/
-
 About basemap-data-hires
 ------------------------
 
@@ -54,8 +52,6 @@ Package license: LGPL-3.0-or-later
 Summary: High-resolution data assets for matplotlib basemap
 
 Development: https://github.com/matplotlib/basemap
-
-Documentation: https://matplotlib.org/basemap/
 
 Current build status
 ====================
