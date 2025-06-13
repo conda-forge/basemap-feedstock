@@ -4,7 +4,7 @@
 {% set data_version = "2.0.0" %}
 {% set data_build_number = 0 %}
 
-{% set python_min = "3.10" %}
+{% set python_min = "3.9" %}
 
 package:
   name: basemap-split
@@ -33,7 +33,7 @@ outputs:
     script: bld-basemap.bat  # [win]
     build:
       number: {{ build_number }}
-      skip: true  # [python_impl == 'pypy' or py<310 or win32 or s390x]
+      skip: true  # [python_impl == 'pypy' or win32 or s390x]
 
     requirements:
       build:
@@ -95,7 +95,6 @@ outputs:
     build:
       number: {{ data_build_number }}
       noarch: python
-      skip: true  # [py<310]
       string: "pyhd8ed1ab_{{ data_build_number }}"
     requirements:
       build:
@@ -123,7 +122,6 @@ outputs:
     build:
       number: {{ data_build_number }}
       noarch: python
-      skip: true  # [py<310]
       string: "pyhd8ed1ab_{{ data_build_number }}"
     requirements:
       build:
