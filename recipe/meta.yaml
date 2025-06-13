@@ -94,8 +94,8 @@ outputs:
     script: bld-basemap.bat  # [win]
     build:
       number: {{ data_build_number }}
-      noarch: python
       string: "pyhd8ed1ab_{{ data_build_number }}"
+      noarch: python
     requirements:
       build:
         - python {{ python_min }}             # [build_platform != target_platform]
@@ -121,8 +121,8 @@ outputs:
     script: bld-basemap.bat  # [win]
     build:
       number: {{ data_build_number }}
-      noarch: python
       string: "pyhd8ed1ab_{{ data_build_number }}"
+      noarch: python
     requirements:
       build:
         - python {{ python_min }}             # [build_platform != target_platform]
