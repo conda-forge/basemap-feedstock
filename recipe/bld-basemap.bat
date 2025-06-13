@@ -15,15 +15,15 @@ EXIT 1
 
 :CASE_basemap
   del packages\basemap\pyproject.toml
-  "%PYTHON%" -m pip install --no-deps --ignore-installed -vvv packages\basemap
+  "%PYTHON%" -m pip install --no-deps --ignore-installed -vvv .
   IF errorlevel 1 EXIT 1
   GOTO CASE_end
 :CASE_basemap_data
-  "%PYTHON%" -m pip install --no-deps --ignore-installed -vvv packages\basemap_data
+  "%PYTHON%" -m pip install --no-deps --ignore-installed -vvv data\basemap_data
   IF errorlevel 1 EXIT 1
   GOTO CASE_end
 :CASE_basemap_data_hires
-  "%PYTHON%" -m pip install --no-deps --ignore-installed -vvv packages\basemap_data_hires
+  "%PYTHON%" -m pip install --no-deps --ignore-installed -vvv data\basemap_data_hires
   IF errorlevel 1 EXIT 1
   GOTO CASE_end
 :CASE_END

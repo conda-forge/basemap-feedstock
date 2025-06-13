@@ -16,13 +16,13 @@ export GEOS_DIR="${PREFIX}"
 case "${PKG_NAME}" in
     basemap)
         # rm -f packages/basemap/pyproject.toml
-        ${PYTHON} -m pip install --no-deps --ignore-installed -vvv packages/basemap
+        ${PYTHON} -m pip install --no-deps --ignore-installed -vvv .
     ;;
     basemap-data)
-        ${PYTHON} -m pip install --no-deps --ignore-installed -vvv packages/basemap_data
+        ${PYTHON} -m pip install --no-deps --ignore-installed -vvv data/basemap_data
     ;;
     basemap-data-hires)
-        ${PYTHON} -m pip install --no-deps --ignore-installed -vvv packages/basemap_data_hires
+        ${PYTHON} -m pip install --no-deps --ignore-installed -vvv data/basemap_data_hires
     ;;
     *)
         echo "No build instructions for ${PKG_NAME}"
