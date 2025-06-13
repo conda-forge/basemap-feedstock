@@ -39,7 +39,7 @@ outputs:
       build:
         - python                              # [build_platform != target_platform]
         - cross-python_{{ target_platform }}  # [build_platform != target_platform]
-        - cython >=0.29,<3.1                  # [build_platform != target_platform]
+        - cython                              # [build_platform != target_platform]
         - numpy                               # [build_platform != target_platform]
         - {{ stdlib("c") }}
         - {{ compiler('c') }}
@@ -49,7 +49,7 @@ outputs:
         - pip
         - setuptools
         - wheel
-        - cython >=0.29,<3.1
+        - cython
         - numpy
         - geos
         - pyproj
@@ -57,17 +57,17 @@ outputs:
         - python
         - {{ pin_subpackage('basemap-data', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('geos', min_pin='x.x.x', max_pin='x.x.x') }}
-        - matplotlib-base >=1.5,<3.10a0
-        - pyproj >=1.9.3,<3.7.0
-        - pyshp >=1.2.0,<2.4.0
-        - packaging <24.0a0
+        - packaging >=20.5,<26.0
+        - matplotlib-base >=3.4,<3.11
+        - pyproj >=3.0,<3.8
+        - pyshp >=2.0,<2.4
     test:
       imports:
         - mpl_toolkits.basemap
       requires:
         - pip
         - {{ pin_subpackage('basemap-data', min_pin='x.x', max_pin='x.x') }}
-        - matplotlib-base >=3.9
+        - matplotlib-base >=3.4
       commands:
         # removed for now until upstream moves to 3.10
         # - pip check
