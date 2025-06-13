@@ -96,7 +96,7 @@ outputs:
       number: {{ data_build_number }}
       noarch: python
       skip: true  # [py<310]
-      string: "basemap_{{ data_build_number }}"
+      string: "pyhd8ed1ab_{{ data_build_number }}"
     requirements:
       build:
         - python {{ python_min }}             # [build_platform != target_platform]
@@ -124,7 +124,7 @@ outputs:
       number: {{ data_build_number }}
       noarch: python
       skip: true  # [py<310]
-      string: "basemap_{{ data_build_number }}"
+      string: "pyhd8ed1ab_{{ data_build_number }}"
     requirements:
       build:
         - python {{ python_min }}             # [build_platform != target_platform]
