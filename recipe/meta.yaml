@@ -78,7 +78,7 @@ outputs:
       license: MIT
       license_family: MIT
       license_file:
-        - packages/basemap/LICENSE
+        - LICENSE
       summary: Plot data on map projections with matplotlib
       description: |
         Basemap toolkit is a library for plotting 2D data on maps in Python.
@@ -86,7 +86,7 @@ outputs:
         the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
       dev_url: https://github.com/matplotlib/basemap
       doc_url: https://matplotlib.org/basemap/
-      doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ version }}/packages/basemap/doc/index.rst
+      doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ version }}/doc/source/index.rst
 
   - name: basemap-data
     version: {{ data_version }}
@@ -112,11 +112,9 @@ outputs:
       home: https://matplotlib.org/basemap
       license: LGPL-3.0-or-later
       license_family: LGPL
-      license_file: packages/basemap_data/COPYING.LESSER
+      license_file: data/basemap_data/COPYING.LESSER
       summary: Data assets for matplotlib basemap
       dev_url: https://github.com/matplotlib/basemap
-      doc_url: https://matplotlib.org/basemap/
-      doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ data_version }}/packages/basemap/doc/index.rst
 
   - name: basemap-data-hires
     version: {{ data_version }}
@@ -143,11 +141,9 @@ outputs:
       home: https://matplotlib.org/basemap
       license: LGPL-3.0-or-later
       license_family: LGPL
-      license_file: packages/basemap_data_hires/COPYING.LESSER
+      license_file: data/basemap_data_hires/COPYING.LESSER
       summary: High-resolution data assets for matplotlib basemap
       dev_url: https://github.com/matplotlib/basemap
-      doc_url: https://matplotlib.org/basemap/
-      doc_source_url: https://github.com/matplotlib/basemap/blob/v{{ data_version }}/packages/basemap/doc/index.rst
 
 about:
   home: https://matplotlib.org/basemap
@@ -155,7 +151,7 @@ about:
   license_family: MIT
   summary: Split feedstock for basemap
   license_file:
-    - packages/basemap/LICENSE
+    - LICENSE
 
 extra:
   recipe-maintainers:
