@@ -1,5 +1,5 @@
 c_compiler:
-- vs2019
+- vs2022
 c_stdlib:
 - vs
 channel_sources:
@@ -7,7 +7,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2019
+- vs2022
 geos:
 - 3.13.1
 numpy:
@@ -21,9 +21,9 @@ python:
 python_impl:
 - cpython
 python_min:
-- '3.9'
+- '3.10'
 target_platform:
 - win-64
 zip_keys:
 - - python
-  - python_impl
+  - channel_sources
