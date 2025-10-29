@@ -19,7 +19,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '19'
 geos:
-- 3.14.0
+- 3.14.1
 macos_machine:
 - arm64-apple-darwin20.0.0
 numpy:
