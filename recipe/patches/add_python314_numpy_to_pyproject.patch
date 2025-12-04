@@ -1,0 +1,10 @@
+--- basemap-2.0.0.orig/pyproject.toml	2025-12-04 11:54:31.666942082 -0600
++++ basemap-2.0.0/pyproject.toml	2025-12-04 11:55:18.770464526 -0600
+@@ -3,6 +3,7 @@
+     "setuptools >= 67.0, < 81.0",
+     "wheel >= 0.40, < 0.46",
+     "cython >= 3.0, < 3.2",
++    "numpy == 2.3.0; python_version == '3.14'",
+     "numpy == 2.1.0; python_version == '3.13'",
+     "numpy == 2.0.0; python_version <= '3.12'",
+ ]

@@ -1,0 +1,11 @@
+--- basemap-2.0.0.orig/setup.py	2025-12-04 11:54:31.666942082 -0600
++++ basemap-2.0.0/setup.py	2025-12-04 12:00:08.075814055 -0600
+@@ -208,7 +208,7 @@
+     "python_requires":
+         ", ".join([
+             ">=3.9",
+-            "<3.14",
++            "<3.15",
+         ]),
+     "install_requires":
+         get_content("dep/requirements.txt", splitlines=True),
