@@ -15,6 +15,10 @@ source:
   sha256: 192ee1c63291d7d1af98fab798c45239ea27e6ca31041afa8c42c8b697e44596
   patches:
     - patches/fix_install_hires_instructions.patch
+    # v2.0.0 does not define python 3.14 + numpy entry
+    - patches/add_python314_numpy_to_pyproject.patch
+    # v2.0.0 hard codes a python <3.14 dep in setup
+    - patches/relax_setup_python_check.patch
 
 build:
   number: {{ build_number }}
