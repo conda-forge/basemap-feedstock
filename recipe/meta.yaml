@@ -1,5 +1,5 @@
 {% set version = "2.0.0" %}
-{% set build_number = 4 %}
+{% set build_number = 5 %}
 
 {% set data_version = "2.0.0" %}
 {% set data_build_number = 0 %}
@@ -59,6 +59,7 @@ outputs:
         - pyproj
       run:
         - python
+        - numpy <2.4
         - {{ pin_subpackage('basemap-data', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('geos', min_pin='x.x.x', max_pin='x.x.x') }}
         - packaging >=20.5,<26.0
